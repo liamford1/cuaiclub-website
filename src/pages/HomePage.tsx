@@ -38,7 +38,7 @@ function HomePage() {
           </div>
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="../src/imgs/homepg.png"
+              src={homepgImage}
               alt="AI Workshop"
               className="w-full h-[400px] object-cover"
             />
