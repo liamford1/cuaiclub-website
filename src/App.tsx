@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -6,10 +6,12 @@ import TeamPage from './pages/TeamPage';
 import SchedulePage from './pages/SchedulePage';
 import MembersPage from './pages/MembersPage';
 import logo from './imgs/black_logo.png';
+import { Menu, X } from 'lucide-react'; // Optional: For hamburger and close icons
 
 function Navbar() {
   const location = useLocation();
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // If on the home page, text is white; otherwise, it's black
   const textColor = location.pathname === "/" ? "text-white" : "text-black";
 
@@ -17,46 +19,97 @@ function Navbar() {
     <nav className="fixed w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
+          {/* Logo */}
           <Link to="/" className="flex items-center transition -ml-28">
-            <img 
-              src={logo} 
-              alt="CU AI Club Logo" 
-              className="h-36" 
-            />
+            <img src={logo} alt="CU AI Club Logo" className="h-36" />
           </Link>
-          <div className="flex space-x-8 -mr-28">
-            <Link 
-              to="/" 
-              className={`flex items-center space-x-1 text-lg transition ${location.pathname === "/" ? "text-white" : "text-black"} hover:text-blue-200`}
+
+          {/* Hamburger Menu (Mobile Only) */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="block md:hidden text-gray-900"
+            aria-label="Toggle navigation"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+
+          {/* Desktop Nav Links */}
+          <div className="hidden md:flex space-x-8 -mr-28">
+            <Link
+              to="/"
+              className={`flex items-center space-x-1 text-lg transition ${
+                location.pathname === "/" ? "text-white" : "text-black"
+              } hover:text-blue-200`}
             >
               <span>Home</span>
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={`flex items-center space-x-1 text-lg transition ${textColor} hover:text-blue-200`}
             >
               <span>About</span>
             </Link>
-            <Link 
-              to="/team" 
+            <Link
+              to="/team"
               className={`flex items-center space-x-1 text-lg transition ${textColor} hover:text-blue-200`}
             >
               <span>Team</span>
             </Link>
-            <Link 
-              to="/schedule" 
+            <Link
+              to="/schedule"
               className={`flex items-center space-x-1 text-lg transition ${textColor} hover:text-blue-200`}
             >
               <span>Schedule</span>
             </Link>
-            <Link 
-              to="/members" 
+            <Link
+              to="/members"
               className={`flex items-center space-x-1 text-lg transition ${textColor} hover:text-blue-200`}
             >
               <span>Member Page</span>
             </Link>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-lg">
+            <Link
+              to="/"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/team"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Team
+            </Link>
+            <Link
+              to="/schedule"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Schedule
+            </Link>
+            <Link
+              to="/members"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Member Page
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );
