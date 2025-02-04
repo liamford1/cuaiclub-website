@@ -17,7 +17,7 @@ function HomePage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl px-4">
             <h1 className="font-mono text-7xl font-bold mb-6">
-              [AI CLUB]
+              AI CLUB
             </h1>
             <span className="font-mono">[at the University of Colorado]</span>
           </div>
