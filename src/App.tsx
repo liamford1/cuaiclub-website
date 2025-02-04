@@ -12,7 +12,8 @@ function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const textColor = location.pathname === "/" ? "text-white" : "text-black";
+  const textColor = location.pathname === "/" ? "text-white" : "text-black"; // Change text color for home
+  const iconColor = location.pathname === "/" ? "text-white" : "text-black"; // Change icon color for home
 
   return (
     <nav className="fixed w-full z-50 bg-transparent">
@@ -21,19 +22,19 @@ function Navbar() {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center transition md:-ml-28 -ml-4" // Adjust logo position for mobile and desktop
+            className="flex items-center transition md:-ml-28 -ml-4"
           >
             <img
               src={logo}
               alt="CU AI Club Logo"
-              className="h-28 md:h-36" // Responsive height for logo
+              className="h-28 md:h-36"
             />
           </Link>
 
           {/* Hamburger Menu (Mobile Only) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="block md:hidden text-gray-900"
+            className={`block md:hidden ${iconColor}`} // Icon color changes based on the page
             aria-label="Toggle navigation"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
