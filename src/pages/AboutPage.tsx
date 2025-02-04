@@ -1,6 +1,8 @@
 import React from 'react';
 import { Linkedin, Instagram, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import img2 from "../imgs/abt_img2.png";
+import img3 from "../imgs/abt_img3.png";
 
 function AboutPage() {
   return (
@@ -10,12 +12,12 @@ function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8 mt-8">
             <img 
-              src='../src/imgs/abt_img3.png'
+              src={img3}
               alt="Team Workshop"
               className="rounded-lg shadow-xl w-4/5 h-auto mt-4"
             />
             <img 
-              src="../src/imgs/abt_img2.png" 
+              src={img2}
               alt="Collaboration"
               className="rounded-lg shadow-xl w-4/5 h-auto"
             />

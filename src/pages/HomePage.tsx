@@ -1,7 +1,7 @@
 import React from 'react';
-import { Linkedin, Instagram, Mail, FileText } from 'lucide-react';
+import { Linkedin, Instagram, FileText } from 'lucide-react';
 import homepgImage from '../imgs/homepg.png';
-import flatirons from '../imgs/flatirons.png'
+import flatirons from '../imgs/flatirons.png';
 import { Link } from 'react-router-dom';
 
 function HomePage() {
