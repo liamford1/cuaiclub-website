@@ -6,13 +6,12 @@ import TeamPage from './pages/TeamPage';
 import SchedulePage from './pages/SchedulePage';
 import MembersPage from './pages/MembersPage';
 import logo from './imgs/black_logo.png';
-import { Menu, X } from 'lucide-react'; // Optional: For hamburger and close icons
+import { Menu, X } from 'lucide-react';
 
 function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // If on the home page, text is white; otherwise, it's black
   const textColor = location.pathname === "/" ? "text-white" : "text-black";
 
   return (
@@ -20,8 +19,15 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center transition -ml-28">
-            <img src={logo} alt="CU AI Club Logo" className="h-36" />
+          <Link
+            to="/"
+            className="flex items-center transition md:-ml-28 -ml-4" // Adjust logo position for mobile and desktop
+          >
+            <img
+              src={logo}
+              alt="CU AI Club Logo"
+              className="h-28 md:h-36" // Responsive height for logo
+            />
           </Link>
 
           {/* Hamburger Menu (Mobile Only) */}
