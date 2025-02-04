@@ -1,0 +1,132 @@
+import React from 'react';
+import { Award, Loader, Rocket } from 'lucide-react';
+
+function MembersPage() {
+  return (
+    <div className="min-h-screen bg-gray-50 pt-16">
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-mono font-bold text-gray-900 mb-4">[Memebership]</h1>
+          <p className="text-xl font-mono text-gray-600">[Become part of CU's pioneering AI initiative!]</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white rounded-lg shadow-xl p-8">
+            <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6">
+              <Loader className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Prospective Member</h3>
+            <p className="text-gray-600 mb-6">Access to workshops, guest speaker events, and networking opportunities. Open to ALL CU students interested in AI.</p>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Access to weekly meetings
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Workshop participation
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Guest Speaker access
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Basic project involvement
+              </li>
+            </ul>
+            <p className="text-2xl font-bold text-center mb-6">1-2 meetings</p>
+            <button className="w-full py-2 px-4 bg-black text-white rounded-lg hover:bg-blue-700 transition">
+              Join Now
+            </button>
+          </div>
+
+          <div className="bg-black rounded-lg shadow-xl p-8 transform scale-105">
+            <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6">
+              <Award className="h-8 w-8 text-black" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Active Member</h3>
+            <p className="text-gray-100 mb-6">For dedicated students wanting deeper involvement</p>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center text-white">
+                <span className="mr-2">✓</span>
+                All Prospective benefits
+              </li>
+              <li className="flex items-center text-white">
+                <span className="mr-2">✓</span>
+                Externship oppritunity
+              </li>
+              <li className="flex items-center text-white">
+                <span className="mr-2">✓</span>
+                Leadership opportunities
+              </li>
+              <li className="flex items-center text-white">
+                <span className="mr-2">✓</span>
+                Eligibility to list CU AI Club on Resume/LinkedIn
+              </li>
+              <li className="flex items-center text-white">
+                <span className="mr-2">✓</span>
+                Official club membership
+              </li>
+            </ul>
+            <p className="text-2xl font-bold text-center text-white mb-6">3+ Meetings</p>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-xl p-8">
+            <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6">
+              <Rocket className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Executive Member</h3>
+            <p className="text-gray-600 mb-6">Lead and shape the future of our organization</p>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                All Active benefits
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Club leadership role
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Event planning access
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Direct industry interaction
+              </li>
+              <li className="flex items-center text-gray-700">
+                <span className="mr-2">✓</span>
+                Exclusive Skill Development
+              </li>
+            </ul>
+            <p className="text-2xl font-bold text-center mb-6">By Application</p>
+            <button className="w-full py-2 px-4 bg-black text-white rounded-lg hover:bg-blue-700 transition">
+              Apply Now
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-xl p-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Current Member Statistics</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <p className="text-4xl font-bold text-blue-600 mb-2">150+</p>
+              <p className="text-gray-600">General Members</p>
+            </div>
+            <div className="text-center">
+              <p className="text-4xl font-bold text-blue-600 mb-2">45</p>
+              <p className="text-gray-600">Active Members</p>
+            </div>
+            <div className="text-center">
+              <p className="text-4xl font-bold text-blue-600 mb-2">9</p>
+              <p className="text-gray-600">Executive Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  );
+}
+
+export default MembersPage
