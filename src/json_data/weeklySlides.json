@@ -1,0 +1,26 @@
+{
+    "weeklySlides": [
+      {
+        "week": "Week 2",
+        "date": "Feb 4",
+        "link": "#",
+        "takeaways": [
+          "Breaking down Deepseek rumors",
+          "New OpenAI models: Operator and o3-mini",
+          "BoltAI Profesional Building",
+          "Guest Speaker: Johnny Garcia, Coursewand AI"
+        ]
+      },
+      {
+        "week": "Week 1",
+        "date": "Jan 21",
+        "link": "#",
+        "takeaways": [
+          "Breaking down AI vocabulary",
+          "Defining AI",
+          "Guest Speakers: Our Sponsors Al and Jeremiah"
+        ]
+      }
+    ]
+  }
+  
