@@ -1,15 +1,15 @@
 import React from 'react';
 import { Linkedin, Instagram, FileText } from 'lucide-react';
-import exec from "../imgs/execpic.png"
-import coleman from "../imgs/coleman_headshot.png";
-import brodie from "../imgs/brodie_headshot.png";
-import liam from "../imgs/liam_headshot.png";
-import max from "../imgs/max_headshot.png";
-import sammy from "../imgs/sammy_headshot.png";
-import corbin from "../imgs/corbin_headshot.png";
-import sam from "../imgs/sam_headshot.png";
-import charlie from "../imgs/charlie_headshot.png";
-import steel from "../imgs/steel_headshot.png";
+import exec from "../imgs/headshots/execpic.png"
+import coleman from "../imgs/headshots/coleman_headshot.png";
+import brodie from "../imgs/headshots/brodie_headshot.png";
+import liam from "../imgs/headshots/liam_headshot.png";
+import max from "../imgs/headshots/max_headshot.png";
+import sammy from "../imgs/headshots/sammy_headshot.png";
+import corbin from "../imgs/headshots/corbin_headshot.png";
+import sam from "../imgs/headshots/sam_headshot.png";
+import charlie from "../imgs/headshots/charlie_headshot.png";
+import steel from "../imgs/headshots/steel_headshot.png";
 
 const teamMembers = [
   { 
@@ -115,7 +115,7 @@ function TeamPage() {
 
         {/* Right Side - Team Members */}
         <div className="w-full md:w-1/2 flex flex-col items-center">
-          <h1 className="text-4xl font-mono font-bold text-gray-900 mb-6">[Our Executive Board]</h1>
+          <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Executive Board]</h1>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
             {teamMembers.map((member, index) => (
@@ -126,7 +126,7 @@ function TeamPage() {
                 rel="noopener noreferrer"
                 className="block cursor-pointer"
               >
-                <div className="bg-white rounded-lg shadow-xl p-6 transform hover:scale-105 transition-transform duration-300">
+                <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300">
                   <div className="flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                       <img 
@@ -135,8 +135,8 @@ function TeamPage() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-black-900 mb-1">{member.name}</h3>
-                    <p className="text-gray-600 font-semibold mb-2">{member.role}</p>
+                    <h3 className="text-xl font-bold text-black mb-1">{member.name}</h3>
+                    <p className="text-black font-semibold mb-2">{member.role}</p>
                     <p className="text-gray-500 text-center">{member.about}</p> 
                     <p className="text-gray-400 text-center">{member.home}</p>
                   </div>

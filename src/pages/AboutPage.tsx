@@ -1,8 +1,8 @@
 import React from 'react';
 import { Linkedin, Instagram, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import img2 from "../imgs/abt_img2.png";
-import img3 from "../imgs/abt_img3.png";
+import img2 from "../imgs/about-page-imgs/abt_img2.png";
+import img3 from "../imgs/about-page-imgs/abt_img3.png";
 
 function AboutPage() {
   return (
@@ -61,7 +61,7 @@ function AboutPage() {
         <div className="bg-gray-50 py-12">
           <h2 className="text-4xl font-mono font-bold text-gray-900 text-center mb-8">[Membership]</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Prospective Member</h3>
               <ul className="text-gray-600 text-center space-y-2">
                 <li>✓ Access to weekly meetings</li>
@@ -71,7 +71,7 @@ function AboutPage() {
                 <li>✓ Basic project involvement</li>
               </ul>
             </div>
-            <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Active Member</h3>
               <ul className="text-gray-600 text-center space-y-2">
                 <li>✓ Includes all general benefits</li>
@@ -81,7 +81,7 @@ function AboutPage() {
                 <li>✓ Eligibility to list CU AI Club on your resume/LinkedIn</li>
               </ul>
             </div>
-            <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg">
+            <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Executive Member</h3>
               <ul className="text-gray-600 text-center space-y-2">
                 <li>✓ Lead workshops and guide AI learning</li>

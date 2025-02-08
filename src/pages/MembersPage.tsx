@@ -36,7 +36,14 @@ function MembersPage() {
             <h2 className="text-2xl font-mono font-bold mb-4">[AI Tools]</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {aiTools.map((tool, index) => (
-                <div key={index} className="border p-4 rounded-lg hover:shadow-md transition max-w-[350px]">
+                <div key={index} className="relative bg-gray-100 border border-gray-200 p-4 rounded-lg hover:shadow-md transition max-w-[350px]">
+                  {tool.logo && (
+                    <img 
+                      src={tool.logo} 
+                      alt={`${tool.name} logo`} 
+                      className="absolute top-6 right-6 h-10"
+                    />
+                  )}
                   <h3 className="font-bold text-lg mb-2">{tool.name}</h3>
                   <p className="text-gray-600 mb-2">{tool.description}</p>
                   {tool.link && (
@@ -44,7 +51,7 @@ function MembersPage() {
                       href={tool.link} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-blue-500 hover:underline"
+                      className="inline-block px-6 bg-white text-black border-2 border-black rounded-lg hover:bg-gray-100 transition"
                     >
                       Visit Website
                     </a>
@@ -61,19 +68,19 @@ function MembersPage() {
       case "aiNews":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
-            <h2 className="text-2xl font-mono font-bold mb-4">[AI NEWS]</h2>
+            <h2 className="text-2xl font-mono font-bold mb-4">[News and Meeting Content]</h2>
             
             {/* Weekly Slides Section */}
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-4">Weekly News Slides</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {weeklySlides.map((slide, index) => (
-                  <div key={index} className="border rounded-lg p-4 hover:shadow-md transition">
+                  <div key={index} className="border bg-gray-100 rounded-lg p-4 border-2 border-gray-200  hover:shadow-md transition">
                     <div className="flex justify-between items-start mb-3">
                       <h4 className="font-bold">{slide.week} ({slide.date})</h4>
                       <a 
                         href={slide.link} 
-                        className="text-blue-500 hover:underline"
+                        className="inline-block px-6 bg-gray-100 text-black border-2 border-black rounded-lg hover:bg-black hover:text-white transition"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -138,7 +145,7 @@ function MembersPage() {
     <div className="min-h-screen bg-gray-50">
       {!isAuthenticated ? (
         <div className="flex items-center justify-center min-h-screen">
-          <div className="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+          <div className="bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-xl w-full max-w-md">
             <h1 className="text-2xl font-bold text-gray-900 mb-4 text-center">
               Members Area
             </h1>
@@ -208,7 +215,7 @@ function MembersPage() {
                     : "hover:bg-gray-200"
                 }`}
               >
-                AI News
+                News and Meeting Content
               </button>
               <button 
                 onClick={() => setActiveSection("externship")}

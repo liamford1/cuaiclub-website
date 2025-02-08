@@ -12,11 +12,13 @@ function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const textColor = location.pathname === "/" ? "text-white" : "text-black"; // Change text color for home
-  const iconColor = location.pathname === "/" ? "text-white" : "text-black"; // Change icon color for home
+  // Updated to include both home and schedule paths for white text
+  const whiteTextPaths = ['/', '/schedule'];
+  const textColor = whiteTextPaths.includes(location.pathname) ? "text-white" : "text-black";
+  const iconColor = whiteTextPaths.includes(location.pathname) ? "text-white" : "text-black";
 
   return (
-    <nav className="fixed w-full z-50 bg-transparent">
+    <nav className="fixed w-full z-50 bg-gradient-to-b from-black/50 to-transparent">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -34,7 +36,7 @@ function Navbar() {
           {/* Hamburger Menu (Mobile Only) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`block md:hidden ${iconColor}`} // Icon color changes based on the page
+            className={`block md:hidden ${iconColor}`}
             aria-label="Toggle navigation"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -45,7 +47,7 @@ function Navbar() {
             <Link
               to="/"
               className={`flex items-center space-x-1 text-lg transition ${
-                location.pathname === "/" ? "text-white" : "text-black"
+                whiteTextPaths.includes(location.pathname) ? "text-white" : "text-black"
               } hover:text-blue-200`}
             >
               <span>Home</span>

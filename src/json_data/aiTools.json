@@ -4,6 +4,7 @@
         "name": "Bolt.new",
         "description": "Text to Website Generator",
         "link": "https://bolt.new/",
+        "logo": "../../ai-tool-logos/bolt-logo.png",
         "howItWorks": "Converts plain text into a fully functional website using AI.",
         "purpose": "Generate simple web pages quickly without coding"
       },
@@ -11,6 +12,7 @@
         "name": "Replit Agent",
         "description": "AI Software Builder",
         "link": "https://docs.replit.com/replitai/agent",
+        "logo": "../../ai-tool-logos/replit-logo.png",
         "howItWorks": "Uses AI to interpret text-based instructions and generate functional software code.",
         "purpose": "Help developers and non-coders build software quickly"
       },
@@ -18,6 +20,7 @@
         "name": "Claude",
         "description": "AI Writing Assistant",
         "link": "https://claude.ai/",
+        "logo": "../../ai-tool-logos/claude-logo.png",
         "howItWorks": "Uses natural language processing to assist with writing, summarizing, and content creation.",
         "purpose": "Help with writing tasks, idea generation, and text refinement"
       },
@@ -25,13 +28,15 @@
         "name": "Midjourney",
         "description": "AI Image & Logo Creation",
         "link": "https://www.midjourney.com/explore?tab=top",
+        "logo": "../../ai-tool-logos/midjourney-logo.png",
         "howItWorks": "Uses deep learning to generate high-quality images from text descriptions.",
         "purpose": "Create logos, artwork, and concept designs"
       },
       {
         "name": "Runway AI",
-        "description": "AI Video Generation & Editing",
+        "description": "AI Video Generation",
         "link": "https://runwayml.com/",
+        "logo": "../../ai-tool-logos/runway-logo.png",
         "howItWorks": "Uses AI to generate, edit, and enhance videos with minimal manual input.",
         "purpose": "Enable video creation, special effects, and animations"
       },
@@ -39,90 +44,103 @@
         "name": "Zapier",
         "description": "Task Automation",
         "link": "https://zapier.com/",
+        "logo": "../../ai-tool-logos/zapier-logo.png",
         "howItWorks": "Connects different web apps and automates repetitive tasks using 'Zaps' (workflow automation rules).",
         "purpose": "Automate tasks like data transfers, email alerts, and social media posting without coding"
       },
       {
         "name": "Make.com",
-        "description": "Visual Automation Platform",
+        "description": "Visual Automation",
         "link": "https://www.make.com/en",
+        "logo": "../../ai-tool-logos/make-logo.png",
         "howItWorks": "Provides a drag-and-drop interface to automate workflows across apps and services.",
         "purpose": "Create complex automation workflows visually without needing to write code"
       },
       {
-        "name": "Prometheus (PromptMetheus)",
-        "description": "Prompt Engineering Assistant",
-        "link": null,
+        "name": "PromptMetheus",
+        "description": "Prompt Engineering",
+        "link": "https://promptmetheus.com/",
+        "logo": "../../ai-tool-logos/promt-logo.png",
         "howItWorks": "Optimizes AI-generated prompts for better performance in large language models.",
         "purpose": "Refine and test AI prompts for chatbots, content generation, and AI automation"
       },
       {
         "name": "Postman",
-        "description": "API Automation & Testing",
+        "description": "API Automation",
         "link": "https://www.postman.com/product/postbot/",
+        "logo": "../../ai-tool-logos/postman-logo.png",
         "howItWorks": "Provides an AI-powered assistant (Postbot) for generating, testing, and automating API requests.",
         "purpose": "Simplify API development, debugging, and documentation for developers"
       },
       {
         "name": "Suno",
-        "description": "AI-Powered Song Creation",
+        "description": "AI Song Creation",
         "link": "https://suno.com/",
+        "logo": "../../ai-tool-logos/suno-logo.png",
         "howItWorks": "Uses generative AI models to compose and produce original songs from text prompts.",
         "purpose": "Generate music in various styles and genres instantly"
       },
       {
         "name": "Replicate",
-        "description": "AI Model Hosting & Execution",
+        "description": "AI Model Hosting",
         "link": "https://replicate.com/",
+        "logo": "../../ai-tool-logos/replicate-logo.png",
         "howItWorks": "Provides access to pre-trained AI models for tasks like image generation, text analysis, and data processing.",
         "purpose": "Allow developers to run AI models on-demand without setting up infrastructure"
       },
       {
         "name": "Descript",
-        "description": "AI-Powered Video & Audio Editor",
+        "description": "Video & Audio Editor",
         "link": "https://www.descript.com/",
+        "logo": "../../ai-tool-logos/descript-logo.png",
         "howItWorks": "Uses AI to edit videos and audio by transcribing spoken words and allowing text-based editing.",
         "purpose": "Enable users to edit media by simply modifying the text transcript"
       },
       {
         "name": "Opus",
-        "description": "Short-Form Video Creation for Social Media",
+        "description": "Video Creation/Social Media",
         "link": "https://www.opus.pro/",
+        "logo": "../../ai-tool-logos/opus-logo.png",
         "howItWorks": "Uses AI to generate engaging short-form videos optimized for social media platforms.",
         "purpose": "Convert longer content into short, catchy clips for TikTok, Instagram Reels, and YouTube Shorts"
       },
       {
         "name": "Study Fetch",
-        "description": "AI-Powered Study Assistant",
+        "description": "AI Study Assistant",
         "link": "https://www.studyfetch.com/",
+        "logo": "../../ai-tool-logos/studyfetch-logo.png",
         "howItWorks": "Utilizes AI to help students with studying, research, and content generation by processing large amounts of academic material.",
         "purpose": "Generate summaries, create flashcards, help with essay writing, and improve study productivity"
       },
       {
         "name": "Perplexity AI",
-        "description": "AI-Powered Search Engine",
+        "description": "AI Search Engine",
         "link": "https://www.perplexity.ai/",
+        "logo": "../../ai-tool-logos/perplexity-logo.png",
         "howItWorks": "Combines large language models with search capabilities to provide detailed answers with citations.",
         "purpose": "Offer summarized search results and research presentations"
       },
       {
         "name": "LockedIn AI",
-        "description": "AI Interview and Meeting Assistant",
+        "description": "AI Interview Assistant",
         "link": "https://www.lockedinai.com/",
+        "logo": "../../ai-tool-logos/lockedin-logo.png",
         "howItWorks": "Uses AI to assist users during interviews and professional meetings by providing real-time answers and tailored feedback.",
         "purpose": "Enhance communication skills and boost confidence in professional settings"
       },
       {
         "name": "Motion AI",
-        "description": "AI Task Management and Scheduling",
+        "description": "AI Task Management",
         "link": "https://www.usemotion.com/",
+        "logo": "../../ai-tool-logos/motion-logo.png",
         "howItWorks": "Integrates AI into task management to help users plan their day by automatically scheduling tasks, meetings, and breaks.",
         "purpose": "Optimize daily schedules, prioritize tasks, and enhance productivity"
       },
       {
         "name": "Tome AI",
-        "description": "AI-Powered Presentation Creator",
-        "link": null,
+        "description": "AI Presentation Creator",
+        "link": "https://tome.app/",
+        "logo": "../../ai-tool-logos/tome-logo.png",
         "howItWorks": "Leverages AI to assist in creating presentations by generating content, designing slides, and organizing information.",
         "purpose": "Simplify professional presentation creation and ensure cohesive design"
       },
@@ -130,13 +148,15 @@
         "name": "Pictory AI",
         "description": "AI Video Generator",
         "link": "https://pictory.ai/",
+        "logo": "../../ai-tool-logos/pictory-logo.png",
         "howItWorks": "Transforms text content into engaging videos using AI by analyzing text to select relevant visuals and audio.",
         "purpose": "Create compelling videos for marketing, education, or entertainment"
       },
       {
         "name": "Taskade AI",
-        "description": "AI Productivity and Collaboration Tool",
-        "link": null,
+        "description": "Productivity/Collaboration",
+        "link": "https://www.taskade.com/",
+        "logo": "../../ai-tool-logos/taskade-logo.png",
         "howItWorks": "Integrates AI into a collaborative workspace for task creation, project management, and team communication.",
         "purpose": "Enhance team productivity by automating task assignments and generating project outlines"
       },
@@ -144,6 +164,7 @@
         "name": "HyperWrite AI",
         "description": "AI Writing Assistant",
         "link": "https://www.hyperwriteai.com/",
+        "logo": "../../ai-tool-logos/hyperwrite-logo.png",
         "howItWorks": "Uses advanced language models to assist with writing tasks, providing suggestions and generating content.",
         "purpose": "Aid in drafting emails, articles, and other written content"
       }
