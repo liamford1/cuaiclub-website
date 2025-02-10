@@ -9,7 +9,7 @@ function HomePage() {
       <div 
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('home-images/flatirons.png')`
+          backgroundImage: `url('home-images/flatirons.webp')`
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
@@ -36,7 +36,7 @@ function HomePage() {
           </div>
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="/home-images/homepg.png"
+              src="/home-images/homepg.webp"
               alt="AI Workshop"
               className="w-full h-[400px] object-cover"
             />
