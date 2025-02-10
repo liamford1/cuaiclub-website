@@ -1,0 +1,103 @@
+{
+  "members": [
+    { 
+      "name": "Coleman Sayers", 
+      "role": "President", 
+      "image": "../headshots/coleman_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/coleman-sayers-09b4bb291/",
+      "major": "Finance and Real Estate",
+      "home": "Ft Collins, CO",
+      "email": "coleman.sayers@colorado.edu",
+      "interests": "Leadership, Real Estate Investments",
+      "year": "2027"
+    },
+    { 
+      "name": "Brodie Pearson", 
+      "role": "Vice President", 
+      "image": "../headshots/brodie_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/brodie-pearson-6316b6271/",
+      "major": "Finance and Accounting",
+      "home": "Steamboat Springs, CO",
+      "email": "brodie.pearson@colorado.edu",
+      "interests": "Financial Planning, Business Strategy",
+      "year": "2027"
+    },
+    { 
+      "name": "Liam Ford", 
+      "role": "Director of Operations and Technology", 
+      "image": "../headshots/liam_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/liam-ford-81892128a/",
+      "major": "CS and Business Minor",
+      "home": "Marin County, CA",
+      "email": "liam.ford@colorado.edu",
+      "interests": "Software Development, AI Integration",
+      "year": "2027"
+    },
+    { 
+      "name": "Max Lane", 
+      "role": "Director of Member Recruitment", 
+      "image": "../headshots/max_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/maxwell-j-lane/",
+      "major": "CS and QF Cert.",
+      "home": "Highlands Ranch, CO",
+      "email": "max.lane@colorado.edu",
+      "interests": "Quantitative Finance, Data Science",
+      "year": "2027"
+    },
+    {
+      "name": "Samantha Lopes", 
+      "role": "Director of Strategy", 
+      "image": "../headshots/samantha_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/samantha--lopes/",
+      "major": "Marketing",
+      "home": "Napels, FL",
+      "email": "samantha.lopes@colorado.edu",
+      "interests": "Market Research, Brand Development",
+      "year": "2027"
+    },
+    { 
+      "name": "Corbin Salinas", 
+      "role": "Director of Marketing", 
+      "image": "../headshots/corbin_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/corbinsalinas/",
+      "major": "Scholars Business Marketing",
+      "home": "Dallas, TX",
+      "email": "corbin.salinas@colorado.edu",
+      "interests": "Digital Marketing, Business Analytics",
+      "year": "2027"
+    },
+    { 
+      "name": "Sam Hunchinson", 
+      "role": "Director of Public Relations", 
+      "image": "../headshots/sam_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/samhutch56/",
+      "major": "Finance and Real Estate",
+      "home": "Folsom, CA",
+      "email": "sam.hunchinson@colorado.edu",
+      "interests": "Corporate Communications, Public Relations",
+      "year": "2027"
+    },
+    { 
+      "name": "Charlie Seck", 
+      "role": "Director of Finance", 
+      "image": "../headshots/charlie_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/charles-seck/",
+      "major": "Honors Finance",
+      "home": "Columbus, OH",
+      "email": "charlie.seck@colorado.edu",
+      "interests": "Financial Modeling, Risk Management",
+      "year": "2027"
+    },
+    { 
+      "name": "Steel Wylie", 
+      "role": "Director of Member Relations", 
+      "image": "../headshots/steel_headshot.png", 
+      "linkedin": "https://www.linkedin.com/in/steelwylie/",
+      "major": "Scholars Finance and Accounting",
+      "home": "Dallas, TX",
+      "email": "steel.wylie@colorado.edu",
+      "interests": "Team Building, Financial Analysis",
+      "year": "2027"
+    }
+  ]
+}
