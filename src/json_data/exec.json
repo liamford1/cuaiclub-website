@@ -3,7 +3,7 @@
     { 
       "name": "Coleman Sayers", 
       "role": "President", 
-      "image": "../headshots/coleman_headshot.png", 
+      "image": "/headshots/coleman_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/coleman-sayers-09b4bb291/",
       "major": "Finance and Real Estate",
       "home": "Ft Collins, CO",
@@ -14,7 +14,7 @@
     { 
       "name": "Brodie Pearson", 
       "role": "Vice President", 
-      "image": "../headshots/brodie_headshot.png", 
+      "image": "/headshots/brodie_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/brodie-pearson-6316b6271/",
       "major": "Finance and Accounting",
       "home": "Steamboat Springs, CO",
@@ -25,7 +25,7 @@
     { 
       "name": "Liam Ford", 
       "role": "Director of Operations and Technology", 
-      "image": "../headshots/liam_headshot.png", 
+      "image": "/headshots/liam_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/liam-ford-81892128a/",
       "major": "CS and Business Minor",
       "home": "Marin County, CA",
@@ -36,7 +36,7 @@
     { 
       "name": "Max Lane", 
       "role": "Director of Member Recruitment", 
-      "image": "../headshots/max_headshot.png", 
+      "image": "/headshots/max_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/maxwell-j-lane/",
       "major": "CS and QF Cert.",
       "home": "Highlands Ranch, CO",
@@ -47,7 +47,7 @@
     {
       "name": "Samantha Lopes", 
       "role": "Director of Strategy", 
-      "image": "../headshots/samantha_headshot.png", 
+      "image": "/headshots/sammy_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/samantha--lopes/",
       "major": "Marketing",
       "home": "Napels, FL",
@@ -58,7 +58,7 @@
     { 
       "name": "Corbin Salinas", 
       "role": "Director of Marketing", 
-      "image": "../headshots/corbin_headshot.png", 
+      "image": "/headshots/corbin_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/corbinsalinas/",
       "major": "Scholars Business Marketing",
       "home": "Dallas, TX",
@@ -69,7 +69,7 @@
     { 
       "name": "Sam Hunchinson", 
       "role": "Director of Public Relations", 
-      "image": "../headshots/sam_headshot.png", 
+      "image": "/headshots/sam_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/samhutch56/",
       "major": "Finance and Real Estate",
       "home": "Folsom, CA",
@@ -80,7 +80,7 @@
     { 
       "name": "Charlie Seck", 
       "role": "Director of Finance", 
-      "image": "../headshots/charlie_headshot.png", 
+      "image": "/headshots/charlie_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/charles-seck/",
       "major": "Honors Finance",
       "home": "Columbus, OH",
@@ -91,7 +91,7 @@
     { 
       "name": "Steel Wylie", 
       "role": "Director of Member Relations", 
-      "image": "../headshots/steel_headshot.png", 
+      "image": "/headshots/steel_headshot.png", 
       "linkedin": "https://www.linkedin.com/in/steelwylie/",
       "major": "Scholars Finance and Accounting",
       "home": "Dallas, TX",
