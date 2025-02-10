@@ -1,7 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, MapPin } from 'lucide-react';
 import upcomingEventsData from "../json_data/upcomingEvents.json";
-import scheduleImg from "../imgs/schedule-imgs/schedule-img.png"
 
 const { events } = upcomingEventsData;
 
@@ -11,7 +10,7 @@ function SchedulePage() {
       <div 
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url(${scheduleImg})`,
+          backgroundImage: `url(/schedule-imgs/schedule-img.png)`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50">
