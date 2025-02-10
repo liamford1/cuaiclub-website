@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import aiToolsData from "../json_data/aiTools.json";
 import weeklySlidesData from "../json_data/weeklySlides.json";
+import membersData from "../json_data/exec.json";
+import { Search } from 'lucide-react';
 
 function MembersPage() {
   const [enteredPassword, setEnteredPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [activeSection, setActiveSection] = useState("connections");
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filterYear, setFilterYear] = useState('all');
 
   const correctPassword = "cuai2025";
 
@@ -20,14 +24,99 @@ function MembersPage() {
 
   const { aiTools } = aiToolsData;
   const { weeklySlides } = weeklySlidesData;
+  const { members } = membersData;
+
+  const filteredMembers = members.filter(member => {
+    const matchesSearch = 
+      member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      member.major.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      member.interests.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    const matchesYear = filterYear === 'all' || member.year === filterYear;
+    
+    return matchesSearch && matchesYear;
+  });
 
   const renderSection = () => {
     switch(activeSection) {
       case "connections":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
-            <h2 className="text-2xl font-mono font-bold mb-4">[Connections List]</h2>
-            <p>COMING SOON!</p>
+            <h2 className="text-2xl font-mono font-bold mb-4">[Club Members Directory]</h2>
+            
+            {/* Search and Filter Controls */}
+            <div className="flex flex-col md:flex-row gap-4 mb-6">
+              <div className="relative flex-grow">
+                <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+                <input
+                  type="text"
+                  placeholder="Search by name, major, or interests..."
+                  className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
+              <select
+                className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+                value={filterYear}
+                onChange={(e) => setFilterYear(e.target.value)}
+              >
+                <option value="all">All Years</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+              </select>
+            </div>
+            <h3 className="text-2xl font-mono font-bold mb-4">Executive Board</h3>
+            {/* Members Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="px-4 py-2 text-left border">Name</th>
+                    <th className="px-4 py-2 text-left border">Year</th>
+                    <th className="px-4 py-2 text-left border">Major</th>
+                    <th className="px-4 py-2 text-left border">Email</th>
+                    <th className="px-4 py-2 text-left border">LinkedIn</th>
+                    <th className="px-4 py-2 text-left border">Interests</th>
+                    <th className="px-4 py-2 text-left border">Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredMembers.map((member, index) => (
+                    <tr 
+                      key={index}
+                      className="hover:bg-gray-50 transition-colors"
+                    >
+                      <td className="px-4 py-2 border">{member.name}</td>
+                      <td className="px-4 py-2 border">{member.year}</td>
+                      <td className="px-4 py-2 border">{member.major}</td>
+                      <td className="px-4 py-2 border">
+                        <a 
+                          href={`mailto:${member.email}`}
+                          className="text-blue-600 hover:underline"
+                        >
+                          {member.email}
+                        </a>
+                      </td>
+                      <td className="px-4 py-2 border">
+                        <a 
+                          href={`https://${member.linkedin}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:underline"
+                        >
+                          Profile →
+                        </a>
+                      </td>
+                      <td className="px-4 py-2 border">{member.interests}</td>
+                      <td className="px-4 py-2 border">{member.role}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       case "aiTools":
@@ -65,7 +154,7 @@ function MembersPage() {
             </div>
           </div>
         );
-      case "aiNews":
+      case "meetingContent":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h2 className="text-2xl font-mono font-bold mb-4">[News and Meeting Content]</h2>
@@ -125,12 +214,6 @@ function MembersPage() {
           </div>
         );
       case "externship":
-        return (
-          <div className="p-6 bg-white rounded-lg shadow-md">
-            <p>COMING SOON!</p>
-          </div>
-        );
-      case "feedback":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
             <p>COMING SOON!</p>
@@ -208,14 +291,14 @@ function MembersPage() {
                 Resume Bullet Points
               </button>
               <button 
-                onClick={() => setActiveSection("aiNews")}
+                onClick={() => setActiveSection("meetingContent")}
                 className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "aiNews" 
+                  activeSection === "meetingContent" 
                     ? "bg-black text-white" 
                     : "hover:bg-gray-200"
                 }`}
               >
-                News and Meeting Content
+                Meeting Content
               </button>
               <button 
                 onClick={() => setActiveSection("externship")}
@@ -226,16 +309,6 @@ function MembersPage() {
                 }`}
               >
                 Externship and Oppritunities
-              </button>
-              <button 
-                onClick={() => setActiveSection("feedback")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "feedback" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                Member Feedback and Suggestions
               </button>
             </nav>
           </div>

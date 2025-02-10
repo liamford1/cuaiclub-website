@@ -1,92 +1,10 @@
 import React from 'react';
 import { Linkedin, Instagram, FileText } from 'lucide-react';
-import exec from "../imgs/headshots/execpic.png"
-import coleman from "../imgs/headshots/coleman_headshot.png";
-import brodie from "../imgs/headshots/brodie_headshot.png";
-import liam from "../imgs/headshots/liam_headshot.png";
-import max from "../imgs/headshots/max_headshot.png";
-import sammy from "../imgs/headshots/sammy_headshot.png";
-import corbin from "../imgs/headshots/corbin_headshot.png";
-import sam from "../imgs/headshots/sam_headshot.png";
-import charlie from "../imgs/headshots/charlie_headshot.png";
-import steel from "../imgs/headshots/steel_headshot.png";
+import membersData from "../json_data/exec.json";
 
-const teamMembers = [
-  { 
-    name: "Coleman Sayers", 
-    role: "President", 
-    image: coleman, 
-    linkedin: "https://www.linkedin.com/in/coleman-sayers-09b4bb291/",
-    about: "Finance and Real Estate",
-    home: "Ft Collins, CO"
-  },
-  { 
-    name: "Brodie Pearson", 
-    role: "Vice President", 
-    image: brodie, 
-    linkedin: "https://www.linkedin.com/in/brodie-pearson-6316b6271/",
-    about: "Finance and Accounting",
-    home: "Steamboat Springs, CO"
-  },
-  { 
-    name: "Liam Ford", 
-    role: "VP of Operations and Technology", 
-    image: liam, 
-    linkedin: "https://www.linkedin.com/in/liam-ford-81892128a/",
-    about: "CS and Business minor",
-    home: "Marin County, CA"
-  },
-  { 
-    name: "Max Lane", 
-    role: "VP of Member Recruitment", 
-    image: max, 
-    linkedin: "https://www.linkedin.com/in/maxwell-j-lane/",
-    about: "CS and QF Cert.",
-    home: "Highlands Ranch, CO"
-  },
-  {
-    name: "Samantha Lopes", 
-    role: "Director of Strategy", 
-    image: sammy, 
-    linkedin: "https://www.linkedin.com/in/samantha--lopes/",
-    about: "Marketing",
-    home: "Napels, FL"
-  },
-  { 
-    name: "Corbin Salinas", 
-    role: "VP of Marketing", 
-    image: corbin, 
-    linkedin: "https://www.linkedin.com/in/corbinsalinas/",
-    about: "Scholars Business Marketing",
-    home: "Dallas, TX"
-  },
-  { 
-    name: "Sam Hunchinson", 
-    role: "VP of Public Relations", 
-    image: sam, 
-    linkedin: "https://www.linkedin.com/in/samhutch56/",
-    about: "Finance and Real Estate",
-    home: "Folsom, CA"
-  },
-  { 
-    name: "Charlie Seck", 
-    role: "VP of Finance", 
-    image: charlie, 
-    linkedin: "https://www.linkedin.com/in/charles-seck/",
-    about: "Honors Finance",
-    home: "Columbus, OH"
-  },
-  { 
-    name: "Steel Wylie", 
-    role: "VP of Member Relations", 
-    image: steel, 
-    linkedin: "https://www.linkedin.com/in/steelwylie/",
-    about: "Scholars Finance and Accounting",
-    home: "Dallas, TX"
-  },
-];
 
 function TeamPage() {
+  const { members } = membersData;
   return (
     <div className="min-h-screen bg-gray-50 pt-16 flex flex-col items-center">
       <h1 className="absolute font-mono top-20 md:top-18 left-8 md:left-16 lg:left-20 text-5xl font-bold text-gray-900">
@@ -97,7 +15,7 @@ function TeamPage() {
         {/* Left Side - Group Picture */}
         <div className="w-full md:w-2/3 lg:w-3/5 flex flex-col justify-center items-center mt-24">
           <img 
-            src={exec}
+            src="../headshots/execpic.png"
             alt="Group Team Photo"
             className="rounded-lg shadow-xl w-full md:w-[90%] lg:w-[95%] h-auto"
           />
@@ -118,7 +36,7 @@ function TeamPage() {
           <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Executive Board]</h1>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
-            {teamMembers.map((member, index) => (
+            {members.map((member, index) => (
               <a 
                 key={index} 
                 href={member.linkedin}
@@ -136,8 +54,8 @@ function TeamPage() {
                       />
                     </div>
                     <h3 className="text-xl font-bold text-black mb-1">{member.name}</h3>
-                    <p className="text-black font-semibold mb-2">{member.role}</p>
-                    <p className="text-gray-500 text-center">{member.about}</p> 
+                    <p className="text-black text-center font-semibold mb-2">{member.role}</p>
+                    <p className="text-gray-500 text-center">{member.major}</p> 
                     <p className="text-gray-400 text-center">{member.home}</p>
                   </div>
                 </div>
