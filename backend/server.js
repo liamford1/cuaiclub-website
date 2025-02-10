@@ -77,7 +77,7 @@ app.post('/submit-suggestion', async (req, res) => {
 
     console.log('Appending suggestion to Google Sheet...');
     await sheets.spreadsheets.values.append({
-      spreadsheetId: SHEET_ID,
+      spreadsheetId: "1TKPqivn1XP8QH2Xbz1W4gGZPaiA7FkiSFUdfaJF8kWQ",
       range: 'Sheet1!A:A', // Replace 'Sheet1' with the name of your tab
       valueInputOption: 'USER_ENTERED',
       requestBody: {
