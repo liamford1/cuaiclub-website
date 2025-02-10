@@ -10,12 +10,12 @@ function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8 mt-8">
             <img 
-              src="/about-page-imgs/abt_img3.png"
+              src="/about-page-imgs/abt_img3.webp"
               alt="Team Workshop"
               className="rounded-lg shadow-xl w-4/5 h-auto mt-4"
             />
             <img 
-              src="/about-page-imgs/abt_img2.png"
+              src="/about-page-imgs/abt_img2.webp"
               alt="Collaboration"
               className="rounded-lg shadow-xl w-4/5 h-auto"
             />

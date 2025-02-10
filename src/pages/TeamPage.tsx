@@ -15,7 +15,7 @@ function TeamPage() {
         {/* Left Side - Group Picture */}
         <div className="w-full md:w-2/3 lg:w-3/5 flex flex-col justify-center items-center mt-24">
           <img 
-            src="/headshots/execpic.png"
+            src="/headshots/execpic.webp"
             alt="Group Team Photo"
             className="rounded-lg shadow-xl w-full md:w-[90%] lg:w-[95%] h-auto"
           />

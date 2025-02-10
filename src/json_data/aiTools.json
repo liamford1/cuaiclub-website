@@ -12,7 +12,7 @@
         "name": "Replit Agent",
         "description": "AI Software Builder",
         "link": "https://docs.replit.com/replitai/agent",
-        "logo": "/ai-tool-logos/replit-logo.png",
+        "logo": "/ai-tool-logos/replit-logo.webp",
         "howItWorks": "Uses AI to interpret text-based instructions and generate functional software code.",
         "purpose": "Help developers and non-coders build software quickly"
       },
