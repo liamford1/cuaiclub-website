@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import aiToolsData from "../json_data/aiTools.json";
 import weeklySlidesData from "../json_data/weeklySlides.json";
-import membersData from "../json_data/exec.json";
+import execData from "../json_data/exec.json";
+import speakersData from "../json_data/guestspeakers.json";
 import { Search } from 'lucide-react';
 
 function MembersPage() {
@@ -24,15 +25,16 @@ function MembersPage() {
 
   const { aiTools } = aiToolsData;
   const { weeklySlides } = weeklySlidesData;
-  const { members } = membersData;
+  const { execs } = execData;
+  const { speakers } = speakersData;
 
-  const filteredMembers = members.filter(member => {
+  const filteredMembers = execs.filter(execs => {
     const matchesSearch = 
-      member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.major.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.interests.toLowerCase().includes(searchQuery.toLowerCase());
+      execs.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      execs.major.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      execs.interests.toLowerCase().includes(searchQuery.toLowerCase());
     
-    const matchesYear = filterYear === 'all' || member.year === filterYear;
+    const matchesYear = filterYear === 'all' || execs.year === filterYear;
     
     return matchesSearch && matchesYear;
   });
@@ -84,25 +86,25 @@ function MembersPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredMembers.map((member, index) => (
+                  {filteredMembers.map((exec, index) => (
                     <tr 
                       key={index}
                       className="hover:bg-gray-50 transition-colors"
                     >
-                      <td className="px-4 py-2 border">{member.name}</td>
-                      <td className="px-4 py-2 border">{member.year}</td>
-                      <td className="px-4 py-2 border">{member.major}</td>
+                      <td className="px-4 py-2 border">{exec.name}</td>
+                      <td className="px-4 py-2 border">{exec.year}</td>
+                      <td className="px-4 py-2 border">{exec.major}</td>
                       <td className="px-4 py-2 border">
                         <a 
-                          href={`mailto:${member.email}`}
+                          href={`mailto:${exec.email}`}
                           className="text-blue-600 hover:underline"
                         >
-                          {member.email}
+                          {exec.email}
                         </a>
                       </td>
                       <td className="px-4 py-2 border">
                         <a 
-                          href={`${member.linkedin}`}
+                          href={`${exec.linkedin}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
@@ -110,8 +112,53 @@ function MembersPage() {
                           Profile →
                         </a>
                       </td>
-                      <td className="px-4 py-2 border">{member.interests}</td>
-                      <td className="px-4 py-2 border">{member.role}</td>
+                      <td className="px-4 py-2 border">{exec.interests}</td>
+                      <td className="px-4 py-2 border">{exec.role}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="text-2xl font-mono font-bold mb-4 mt-4">Guest Speakers</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="px-4 py-2 text-left border">Name</th>
+                    <th className="px-4 py-2 text-left border">Company</th>
+                    <th className="px-4 py-2 text-left border">Email</th>
+                    <th className="px-4 py-2 text-left border">LinkedIn</th>
+                    <th className="px-4 py-2 text-left border">Industry</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {speakers.map((speaker, index) => (
+                    <tr 
+                      key={index}
+                      className="hover:bg-gray-50 transition-colors"
+                    >
+                      <td className="px-4 py-2 border">{speaker.name}</td>
+                      <td className="px-4 py-2 border">{speaker.company}</td>
+                      <td className="px-4 py-2 border">
+                        <a 
+                          href={`mailto:${speaker.email}`}
+                          className="text-blue-600 hover:underline"
+                        >
+                          {speaker.email}
+                        </a>
+                      </td>
+                      <td className="px-4 py-2 border">
+                        <a 
+                          href={`${speaker.linkedin}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:underline"
+                        >
+                          Profile →
+                        </a>
+                      </td>
+                      <td className="px-4 py-2 border">{speaker.industry}</td>
                     </tr>
                   ))}
                 </tbody>

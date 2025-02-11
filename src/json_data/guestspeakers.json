@@ -1,0 +1,12 @@
+{
+    "speakers": [
+      { 
+        "name": "Johnny Garcia", 
+        "company": "Coursewand AI",  
+        "linkedin": "https://www.linkedin.com/in/jgvirtueeducation/",
+        "email": "johnny@coursewand.com",
+        "industry": "AI, Software, Education"
+      }
+    ]
+  }
+  
