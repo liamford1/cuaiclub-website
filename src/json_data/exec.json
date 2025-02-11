@@ -67,14 +67,14 @@
       "year": "2027"
     },
     { 
-      "name": "Sam Hunchinson", 
-      "role": "Director of Public Relations", 
-      "image": "/headshots/sam_headshot.webp", 
-      "linkedin": "https://www.linkedin.com/in/samhutch56/",
-      "major": "Finance and Real Estate",
-      "home": "Folsom, CA",
-      "email": "sam.hunchinson@colorado.edu",
-      "interests": "Corporate Communications, Public Relations",
+      "name": "Steel Wylie", 
+      "role": "Director of Member Relations", 
+      "image": "/headshots/steel_headshot.webp", 
+      "linkedin": "https://www.linkedin.com/in/steelwylie/",
+      "major": "Scholars Finance and Accounting",
+      "home": "Dallas, TX",
+      "email": "steel.wylie@colorado.edu",
+      "interests": "M&A, Private Equity",
       "year": "2027"
     },
     { 
@@ -89,14 +89,14 @@
       "year": "2027"
     },
     { 
-      "name": "Steel Wylie", 
-      "role": "Director of Member Relations", 
-      "image": "/headshots/steel_headshot.webp", 
-      "linkedin": "https://www.linkedin.com/in/steelwylie/",
-      "major": "Scholars Finance and Accounting",
-      "home": "Dallas, TX",
-      "email": "steel.wylie@colorado.edu",
-      "interests": "M&A, Private Equity",
+      "name": "Sam Hunchinson", 
+      "role": "Director of Public Relations", 
+      "image": "/headshots/sam_headshot.webp", 
+      "linkedin": "https://www.linkedin.com/in/samhutch56/",
+      "major": "Finance and Real Estate",
+      "home": "Folsom, CA",
+      "email": "sam.hunchinson@colorado.edu",
+      "interests": "Corporate Communications, Public Relations",
       "year": "2027"
     }
   ]
