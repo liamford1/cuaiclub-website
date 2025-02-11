@@ -19,18 +19,18 @@
       "major": "Finance and Accounting",
       "home": "Steamboat Springs, CO",
       "email": "brodie.pearson@colorado.edu",
-      "interests": "Financial Planning, Business Strategy",
+      "interests": "Private Equity, AI",
       "year": "2027"
     },
     { 
       "name": "Liam Ford", 
-      "role": "Director of Operations and Technology", 
+      "role": "Director of Operations", 
       "image": "/headshots/liam_headshot.webp", 
       "linkedin": "https://www.linkedin.com/in/liam-ford-81892128a/",
       "major": "CS and Business Minor",
       "home": "Marin County, CA",
       "email": "liam.ford@colorado.edu",
-      "interests": "Software Development, AI Integration",
+      "interests": "Software Development, AI Engineering",
       "year": "2027"
     },
     { 
@@ -96,7 +96,7 @@
       "major": "Scholars Finance and Accounting",
       "home": "Dallas, TX",
       "email": "steel.wylie@colorado.edu",
-      "interests": "Team Building, Financial Analysis",
+      "interests": "M&A, Private Equity",
       "year": "2027"
     }
   ]

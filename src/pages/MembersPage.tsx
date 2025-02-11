@@ -102,7 +102,7 @@ function MembersPage() {
                       </td>
                       <td className="px-4 py-2 border">
                         <a 
-                          href={`https://${member.linkedin}`}
+                          href={`${member.linkedin}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
