@@ -1,5 +1,5 @@
 {
-  "members": [
+  "execs": [
     { 
       "name": "Coleman Sayers", 
       "role": "President", 
@@ -41,7 +41,7 @@
       "major": "CS and QF Cert.",
       "home": "Highlands Ranch, CO",
       "email": "max.lane@colorado.edu",
-      "interests": "Quantitative Finance, Data Science",
+      "interests": "AI, Technology Development",
       "year": "2027"
     },
     {
@@ -85,7 +85,7 @@
       "major": "Honors Finance",
       "home": "Columbus, OH",
       "email": "charlie.seck@colorado.edu",
-      "interests": "Financial Modeling, Risk Management",
+      "interests": "Private Equity, Venture Capital",
       "year": "2027"
     },
     { 
