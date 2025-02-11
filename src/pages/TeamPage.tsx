@@ -4,7 +4,7 @@ import membersData from "../json_data/exec.json";
 
 
 function TeamPage() {
-  const { members } = membersData;
+  const { execs } = membersData;
   return (
     <div className="min-h-screen bg-gray-50 pt-16 flex flex-col items-center">
       <h1 className="absolute font-mono top-20 md:top-18 left-8 md:left-16 lg:left-20 text-5xl font-bold text-gray-900">
@@ -36,10 +36,10 @@ function TeamPage() {
           <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Executive Board]</h1>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
-            {members.map((member, index) => (
+            {execs.map((exec, index) => (
               <a 
                 key={index} 
-                href={member.linkedin}
+                href={exec.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block cursor-pointer"
@@ -48,15 +48,15 @@ function TeamPage() {
                   <div className="flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                       <img 
-                        src={member.image} 
-                        alt={member.name}
+                        src={exec.image} 
+                        alt={exec.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-black mb-1">{member.name}</h3>
-                    <p className="text-black text-center font-semibold mb-2">{member.role}</p>
-                    <p className="text-gray-500 text-center">{member.major}</p> 
-                    <p className="text-gray-400 text-center">{member.home}</p>
+                    <h3 className="text-xl font-bold text-black mb-1">{exec.name}</h3>
+                    <p className="text-black text-center font-semibold mb-2">{exec.role}</p>
+                    <p className="text-gray-500 text-center">{exec.major}</p> 
+                    <p className="text-gray-400 text-center">{exec.home}</p>
                   </div>
                 </div>
               </a>
