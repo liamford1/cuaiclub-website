@@ -164,6 +164,8 @@ function MembersPage() {
                 </tbody>
               </table>
             </div>
+            <h3 className="text-2xl font-mono font-bold mb-4 mt-4">Active Members</h3>
+                  
           </div>
         );
       case "aiTools":
