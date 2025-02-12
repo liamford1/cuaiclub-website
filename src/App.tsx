@@ -5,7 +5,6 @@ import AboutPage from './pages/AboutPage';
 import TeamPage from './pages/TeamPage';
 import SchedulePage from './pages/SchedulePage';
 import MembersPage from './pages/MembersPage';
-import logo from './imgs/black_logo.png';
 import { Menu, X } from 'lucide-react';
 
 function Navbar() {
@@ -27,9 +26,9 @@ function Navbar() {
             className="flex items-center transition md:-ml-28 -ml-4"
           >
             <img
-              src={logo}
+              src="cuaic-logo.png"
               alt="CU AI Club Logo"
-              className="h-28 md:h-36"
+              className="h-28 md:h-16"
             />
           </Link>
 
