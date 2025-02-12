@@ -3,7 +3,7 @@ import aiToolsData from "../json_data/aiTools.json";
 import weeklySlidesData from "../json_data/weeklySlides.json";
 import execData from "../json_data/exec.json";
 import speakersData from "../json_data/guestspeakers.json";
-import { Search } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 
 function MembersPage() {
   const [enteredPassword, setEnteredPassword] = useState("");
@@ -11,6 +11,7 @@ function MembersPage() {
   const [activeSection, setActiveSection] = useState("connections");
   const [searchQuery, setSearchQuery] = useState('');
   const [filterYear, setFilterYear] = useState('all');
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
 
   const correctPassword = "cuai2025";
 
@@ -38,6 +39,10 @@ function MembersPage() {
     
     return matchesSearch && matchesYear;
   });
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
 
   const renderSection = () => {
     switch(activeSection) {
@@ -303,67 +308,91 @@ function MembersPage() {
         </div>
       ) : (
         <div className="flex">
-          {/* Sidebar Navigation - Fixed width */}
-          <div className="w-64 flex-none bg-gray-100 min-h-screen p-6 fixed">
-            <h1 className="text-2xl font-mono font-bold text-gray-900 mt-16 mb-8">
-              [Members Page]
-            </h1>
-            <nav className="w-full">
-              <button 
-                onClick={() => setActiveSection("connections")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "connections" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                Connections List
-              </button>
-              <button 
-                onClick={() => setActiveSection("aiTools")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "aiTools" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                AI Tools
-              </button>
-              <button 
-                onClick={() => setActiveSection("resumeBullets")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "resumeBullets" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                Resume Bullet Points
-              </button>
-              <button 
-                onClick={() => setActiveSection("meetingContent")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "meetingContent" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                Meeting Content
-              </button>
-              <button 
-                onClick={() => setActiveSection("externship")}
-                className={`w-full text-left py-2 px-4 rounded mb-2 ${
-                  activeSection === "externship" 
-                    ? "bg-black text-white" 
-                    : "hover:bg-gray-200"
-                }`}
-              >
-                Externship and Oppritunities
-              </button>
-            </nav>
+          <div 
+            className={`
+              fixed h-full bg-gray-100 transition-all duration-300 ease-in-out 
+              ${isSidebarOpen ? 'w-64' : 'w-12'}
+            `}
+          >
+            {/* Toggle Button */}
+            <button
+              onClick={toggleSidebar}
+              className="absolute -right-3 top-32 bg-black text-white rounded-full p-1 shadow-lg z-50"
+            >
+              {isSidebarOpen ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
+            </button>
+
+            {/* Sidebar Content: keep it in the DOM instead of hiding */}
+            <div 
+              className={`
+                h-full p-6 transition-all duration-300 ease-in-out overflow-hidden 
+                ${isSidebarOpen ? 'opacity-100 w-full' : 'opacity-0 w-0'}
+              `}
+            >
+              <h1 className="text-2xl font-mono font-bold text-gray-900 mt-16 mb-8">
+                [Members Page]
+              </h1>
+              <nav className="w-full">
+                <button 
+                  onClick={() => setActiveSection("connections")}
+                  className={`w-full text-left py-2 px-4 rounded mb-2 ${
+                    activeSection === "connections" 
+                      ? "bg-black text-white" 
+                      : "hover:bg-gray-200"
+                  }`}
+                >
+                  Connections List
+                </button>
+                <button 
+                  onClick={() => setActiveSection("aiTools")}
+                  className={`w-full text-left py-2 px-4 rounded mb-2 ${
+                    activeSection === "aiTools" 
+                      ? "bg-black text-white" 
+                      : "hover:bg-gray-200"
+                  }`}
+                >
+                  AI Tools
+                </button>
+                <button 
+                  onClick={() => setActiveSection("resumeBullets")}
+                  className={`w-full text-left py-2 px-4 rounded mb-2 ${
+                    activeSection === "resumeBullets" 
+                      ? "bg-black text-white" 
+                      : "hover:bg-gray-200"
+                  }`}
+                >
+                  Resume Bullet Points
+                </button>
+                <button 
+                  onClick={() => setActiveSection("meetingContent")}
+                  className={`w-full text-left py-2 px-4 rounded mb-2 ${
+                    activeSection === "meetingContent" 
+                      ? "bg-black text-white" 
+                      : "hover:bg-gray-200"
+                  }`}
+                >
+                  Meeting Content
+                </button>
+                <button 
+                  onClick={() => setActiveSection("externship")}
+                  className={`w-full text-left py-2 px-4 rounded mb-2 ${
+                    activeSection === "externship" 
+                      ? "bg-black text-white" 
+                      : "hover:bg-gray-200"
+                  }`}
+                >
+                  Externship and Opportunities
+                </button>
+              </nav>
+            </div>
           </div>
 
-          {/* Main Content Area - With offset margin */}
-          <div className="flex-grow ml-64 p-8">
+          {/* Main Content Area with Dynamic Margin */}
+          <div 
+            className={`flex-grow transition-all duration-300 ease-in-out ${
+              isSidebarOpen ? 'ml-64' : 'ml-12'
+            } p-8`}
+          >
             <p className="text-lg font-mono text-gray-600 mb-6 mt-8">
               **Welcome to the Members Page! Here you will find our connections and resources. This page is under development but should be mostly functional!**
             </p>
