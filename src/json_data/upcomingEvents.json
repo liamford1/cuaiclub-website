@@ -2,7 +2,7 @@
     "events": [
       {
         "title": "Bi-Weekly Meeting",
-        "date": "Every Tuesday",
+        "date": "Every Other Tuesday",
         "time": "6:15 PM - 7:30 PM",
         "location": "Koelbel 352",
         "description": "Networking, AI News and discussion, Hands-on workshop covering various AI topics and practical implementations.",

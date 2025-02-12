@@ -23,7 +23,7 @@ function TeamPage() {
           <div className="mt-8 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Our Executive Board at the CU AI Club is dedicated to fostering a community of learners and innovators passionate about artificial intelligence. 
+              Our Executive Board at the CU AI Club is dedicated to building a community of learners and innovators passionate about artificial intelligence. 
               Our mission is to empower students with the skills and tools needed to excel in AI, connect with industry leaders, 
               and collaborate on meaningful projects that drive innovation. Whether you're just starting out or already experienced, 
               you'll find opportunities to grow, learn, and make an impact in the ever-evolving field of AI. Feel free to each out to any of our team members!
