@@ -1,0 +1,21 @@
+{
+    "members": [
+    { 
+        "name": "Lachlan Hawes", 
+        "year": "2027", 
+        "major": "Business Administration",
+        "email": "lachlan.hawes@colorado.edu",
+        "linkedin": "https://www.linkedin.com/in/lachlan-hawes-41315a295/",
+        "interests": "Marketing and Strategic Consulting"
+    },
+    { 
+        "name": "Bryce Kallio", 
+        "year": "2028", 
+        "major": "Finance",
+        "email": "bryce.kallio@colorado.edu",
+        "linkedin": "https://www.linkedin.com/in/bryce-kallio/",
+        "interests": "Private Equity or Consulting"
+    }
+    ]
+}
+  
