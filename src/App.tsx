@@ -28,7 +28,7 @@ function Navbar() {
             <img
               src="cuaic-logo.png"
               alt="CU AI Club Logo"
-              className="h-28 md:h-16"
+              className="h-12 md:h-16"
             />
           </Link>
 
