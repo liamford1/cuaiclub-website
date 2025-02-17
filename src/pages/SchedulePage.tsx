@@ -36,7 +36,9 @@ function SchedulePage() {
                     </span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{event.title}</h3>
-                  <p className="text-gray-600 mb-4">{event.description}</p>
+                  <p className="text-gray-600 mb-4">{event.news}</p>
+                  <p className="text-gray-600 mb-4">{event.prof_building}</p>
+                  <p className="text-gray-600 mb-4">{event.guest_speaker}</p>
                   <div className="flex flex-col space-y-2">
                     <div className="flex items-center text-gray-700">
                       <Calendar className="h-5 w-5 mr-2 text-black" />

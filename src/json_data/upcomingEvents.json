@@ -5,15 +5,19 @@
         "date": "Tuesday, Feb 18",
         "time": "6:15 PM - 7:30 PM",
         "location": "Koelbel 352",
-        "description": "AI NEWS: GROK, GPT-5, ChatGPT Tasks, PROFESIONAL BUILDING: Prompt Engineering",
+        "news": "AI NEWS: GROK, GPT-5, ChatGPT Tasks",
+        "prof_building": "PROFESIONAL BUILDING: Prompt Engineering",
+        "guest_speaker": "GUEST SPEAKER: Untapped Learning",
         "category": "Meeting"
       },
       {
         "title": "Bi-Weekly Meeting",
-        "date": "Tuesday, Feb 18",
+        "date": "Tuesday, Mar 4th",
         "time": "6:15 PM - 7:30 PM",
         "location": "Koelbel 352",
-        "description": "Networking, AI News, GUEST SPEAKER: Study Fetch AI",
+        "news": "AI NEWS: TBD",
+        "prof_building": "PROFESIONAL BUILDING: TBD",
+        "guest_speaker": "GUEST SPEAKER: Study Fetch AI",
         "category": "Meeting"
       },
       {
@@ -21,7 +25,9 @@
         "date": "Thursday, Feb 27",
         "time": "6:30 PM - 9:00 PM",
         "location": "Rincon Del Sol",
-        "description": "Join us at Rincon for food, drinks, and networking!",
+        "news": "Join us at Rincon for food, drinks, and networking!",
+        "prof_building": "",
+        "guest_speaker": "",
         "category": "Fundraiser"
       }
     ]
