@@ -221,14 +221,16 @@ function MembersPage() {
                   <div key={index} className="border bg-gray-100 rounded-lg p-4 border-2 border-gray-200  hover:shadow-md transition">
                     <div className="flex justify-between items-start mb-3">
                       <h4 className="font-bold">{slide.week} ({slide.date})</h4>
-                      <a 
-                        href={slide.link} 
-                        className="inline-block px-6 bg-gray-100 text-black border-2 border-black rounded-lg hover:bg-black hover:text-white transition"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Slides →
-                      </a>
+                      {slide.link !== "#" && (
+                        <a
+                          href={slide.link}
+                          className="inline-block px-6 bg-gray-100 text-black border-2 border-black rounded-lg hover:bg-black hover:text-white transition"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Slides →
+                        </a>
+                      )}
                     </div>
                     <div className="space-y-2">
                       <p className="font-semibold">Key Takeaways:</p>
