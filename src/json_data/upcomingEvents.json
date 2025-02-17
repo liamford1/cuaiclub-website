@@ -11,16 +11,6 @@
         "category": "Meeting"
       },
       {
-        "title": "Bi-Weekly Meeting",
-        "date": "Tuesday, Mar 4th",
-        "time": "6:15 PM - 7:30 PM",
-        "location": "Koelbel 352",
-        "news": "AI NEWS: TBD",
-        "prof_building": "PROFESIONAL BUILDING: TBD",
-        "guest_speaker": "GUEST SPEAKER: Study Fetch AI",
-        "category": "Meeting"
-      },
-      {
         "title": "Fundraiser",
         "date": "Thursday, Feb 27",
         "time": "6:30 PM - 9:00 PM",
@@ -29,6 +19,16 @@
         "prof_building": "",
         "guest_speaker": "",
         "category": "Fundraiser"
+      },
+      {
+        "title": "Bi-Weekly Meeting",
+        "date": "Tuesday, Mar 4th",
+        "time": "6:15 PM - 7:30 PM",
+        "location": "Koelbel 352",
+        "news": "AI NEWS: TBD",
+        "prof_building": "PROFESIONAL BUILDING: TBD",
+        "guest_speaker": "GUEST SPEAKER: Study Fetch AI",
+        "category": "Meeting"
       }
     ]
   }
