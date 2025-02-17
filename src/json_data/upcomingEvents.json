@@ -2,12 +2,29 @@
     "events": [
       {
         "title": "Bi-Weekly Meeting",
-        "date": "Every Other Tuesday",
+        "date": "Tuesday, Feb 18",
         "time": "6:15 PM - 7:30 PM",
         "location": "Koelbel 352",
-        "description": "Networking, AI News and discussion, Hands-on workshop covering various AI topics and practical implementations.",
+        "description": "AI NEWS: GROK, GPT-5, ChatGPT Tasks, PROFESIONAL BUILDING: Prompt Engineering",
         "category": "Meeting"
+      },
+      {
+        "title": "Bi-Weekly Meeting",
+        "date": "Tuesday, Feb 18",
+        "time": "6:15 PM - 7:30 PM",
+        "location": "Koelbel 352",
+        "description": "Networking, AI News, GUEST SPEAKER: Study Fetch AI",
+        "category": "Meeting"
+      },
+      {
+        "title": "Fundraiser",
+        "date": "Thursday, Feb 27",
+        "time": "6:30 PM - 9:00 PM",
+        "location": "Rincon Del Sol",
+        "description": "Join us at Rincon for food, drinks, and networking!",
+        "category": "Fundraiser"
       }
     ]
   }
+  
   
