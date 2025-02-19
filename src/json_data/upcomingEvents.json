@@ -8,6 +8,7 @@
         "news": "AI NEWS: GROK, GPT-5, ChatGPT Tasks",
         "prof_building": "PROFESIONAL BUILDING: Prompt Engineering",
         "guest_speaker": "GUEST SPEAKER: Untapped Learning",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog",
         "category": "Meeting"
       },
       {
@@ -18,6 +19,7 @@
         "news": "Join us at Rincon for food, drinks, and networking!",
         "prof_building": "",
         "guest_speaker": "",
+        "link": "https://www.groupraise.com/events/299780-the-ai-club-at-cu-boulder-at-rincon-del-sol",
         "category": "Fundraiser"
       },
       {
@@ -28,6 +30,7 @@
         "news": "AI NEWS: TBD",
         "prof_building": "PROFESIONAL BUILDING: TBD",
         "guest_speaker": "GUEST SPEAKER: Study Fetch AI",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog",
         "category": "Meeting"
       }
     ]
