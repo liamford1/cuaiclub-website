@@ -1,6 +1,17 @@
 {
     "weeklySlides": [
       {
+        "week": "Week 3",
+        "date": "Feb 18",
+        "link": "../../slides/slides3.pdf",
+        "takeaways": [
+          "XAI: GROK 3",
+          "ChatGPT Tasks and browser extension",
+          "Prompt Engineering Profesional Building",
+          "Guest Speaker: Untapped Learning"
+        ]
+      },
+      {
         "week": "Week 2",
         "date": "Feb 4",
         "link": "../../slides/slides2.pdf",
