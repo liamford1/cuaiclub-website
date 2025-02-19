@@ -318,6 +318,7 @@ function MembersPage() {
       case "externship":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-2xl font-mono font-bold mb-4">[Externship and Opportunities]</h2>
             <p>COMING SOON!</p>
           </div>
         );
@@ -442,9 +443,8 @@ function MembersPage() {
             } p-8`}
           >
             <p className="text-lg font-mono text-gray-600 mb-6 mt-8">
-              **Welcome to the Members Page! Here you will find our connections and resources. This page is under development but should be mostly functional!**
+              Welcome to the CU AI Club Members Page! This is where you can access our exclusive member resources.
             </p>
-            
             {renderSection()}
           </div>
         </div>
