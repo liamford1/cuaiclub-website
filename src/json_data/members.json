@@ -1,21 +1,124 @@
 {
     "members": [
-    { 
-        "name": "Lachlan Hawes", 
-        "year": "2027", 
-        "major": "Business Administration",
-        "email": "lachlan.hawes@colorado.edu",
-        "linkedin": "https://www.linkedin.com/in/lachlan-hawes-41315a295/",
-        "interests": "Marketing and Strategic Consulting"
-    },
-    { 
-        "name": "Bryce Kallio", 
-        "year": "2028", 
-        "major": "Finance",
-        "email": "bryce.kallio@colorado.edu",
-        "linkedin": "https://www.linkedin.com/in/bryce-kallio/",
-        "interests": "Private Equity or Consulting"
-    }
+        { 
+            "name": "Jack Brawley", 
+            "year": "2028", 
+            "major": "Undecided",
+            "email": "Brawley.jack@colorado.edu",
+            "linkedin": "",
+            "interests": "Financial advising and accounting"
+        },
+        { 
+            "name": "Seth Burt", 
+            "year": "2028", 
+            "major": "Exploratory Studies",
+            "email": "seth.burt@colorado.edu",
+            "linkedin": "",
+            "interests": "Investment Banking and Actuaries"
+        },
+        { 
+            "name": "Markus Dale", 
+            "year": "2027", 
+            "major": "Economics and Political Science",
+            "email": "Markus.DaleJr@colorado.edu",
+            "linkedin": "",
+            "interests": ""
+        },
+        { 
+            "name": "Lachlan Hawes", 
+            "year": "2027", 
+            "major": "Business Administration",
+            "email": "lachlan.hawes@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/lachlan-hawes-41315a295",
+            "interests": "Marketing and Strategic Consulting"
+        },
+        { 
+            "name": "Bryce Kallio", 
+            "year": "2028", 
+            "major": "Finance",
+            "email": "Bryce.Kallio@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/bryce-kallio",
+            "interests": "Private Equity and Consulting"
+        },
+        { 
+            "name": "Griffin Keown", 
+            "year": "2027", 
+            "major": "Finance",
+            "email": "griffin.keown@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/griffin-keown/",
+            "interests": "Investment Banking and Private Equity"
+        },
+        { 
+            "name": "Jack Kearns", 
+            "year": "2028", 
+            "major": "Exploratory",
+            "email": "Jack.KearnsIV@colorado.edu",
+            "linkedin": "",
+            "interests": "Gaming/Virtual Reality and Autonomous Vehicles/Robotics"
+        },
+        { 
+            "name": "Liam Masters", 
+            "year": "2027", 
+            "major": "Finance & Accounting",
+            "email": "liam.masters@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/liam-masters1/",
+            "interests": "AI Software Development and Personal Financial Planning"
+        },
+        { 
+            "name": "Catly Nguyen", 
+            "year": "2027", 
+            "major": "Marketing",
+            "email": "catly.nguyen@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/catly-nguyen",
+            "interests": "Digital Marketing and Social Media"
+        },
+        { 
+            "name": "Ross O’Brien", 
+            "year": "2028", 
+            "major": "Undecided",
+            "email": "Roob5513@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/ross-o%E2%80%99brien",
+            "interests": "AI Development"
+        },
+        { 
+            "name": "Patrick O’Rourke", 
+            "year": "2027", 
+            "major": "Marketing",
+            "email": "Paor7365@colorado.edu",
+            "linkedin": "",
+            "interests": "AI consulting and Sports Business"
+        },
+        { 
+            "name": "Nelson Speer", 
+            "year": "2027", 
+            "major": "Finance and Accounting",
+            "email": "nelson.speer@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/nelson-speer/",
+            "interests": "Wealth Management and Consulting"
+        },
+        { 
+            "name": "Owen Smail", 
+            "year": "2027", 
+            "major": "Accounting",
+            "email": "Owen.smail@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/owen-smail-152102",
+            "interests": "Audit/Tax Software and AI"
+        },
+        { 
+            "name": "Hugh Werber", 
+            "year": "2027", 
+            "major": "Finance",
+            "email": "hugh.werber@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/hugh-werber-cu",
+            "interests": "Equity Research and Investment Banking"
+        },
+        { 
+            "name": "Chad Jones", 
+            "year": "2028", 
+            "major": "Exploratory",
+            "email": "Chad.jones@colorado.edu",
+            "linkedin": "",
+            "interests": "AI and Finance"
+        }
     ]
 }
-  

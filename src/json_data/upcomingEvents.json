@@ -1,17 +1,6 @@
 {
     "events": [
       {
-        "title": "Bi-Weekly Meeting",
-        "date": "Tuesday, Feb 18",
-        "time": "6:15 PM - 7:30 PM",
-        "location": "Koelbel 352",
-        "news": "AI NEWS: GROK, GPT-5, ChatGPT Tasks",
-        "prof_building": "PROFESIONAL BUILDING: Prompt Engineering",
-        "guest_speaker": "GUEST SPEAKER: Untapped Learning",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog",
-        "category": "Meeting"
-      },
-      {
         "title": "Fundraiser",
         "date": "Thursday, Feb 27",
         "time": "6:30 PM - 9:00 PM",
