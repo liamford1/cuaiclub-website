@@ -1,0 +1,12 @@
+{
+    "featured": [
+      {
+        "name": "Pickaxe",
+        "description": "AI Tool Builder",
+        "link": "https://www.pickaxeproject.com/",
+        "logo": "/ai-tool-logos/pickaxe-logo.webp",
+        "howItWorks": "Build, deploy, and monetize your own AI tools, such as chatbots and interactive forms, without writing any code.",
+        "purpose": "Generate AI widgets and tools without code"
+      }
+    ]
+}
