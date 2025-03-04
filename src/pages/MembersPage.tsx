@@ -4,6 +4,7 @@ import weeklySlidesData from "../json_data/weeklySlides.json";
 import execData from "../json_data/exec.json";
 import speakersData from "../json_data/guestspeakers.json";
 import membersData from "../json_data/members.json";
+import featuredData from "../json_data/featured.json";
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 
 function MembersPage() {
@@ -222,6 +223,18 @@ function MembersPage() {
       case "aiTools":
         return (
           <div className="p-6 bg-white rounded-lg shadow-md">
+            <h2 className="text-2xl font-mono font-bold mb-4">[Featured Tools]</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            {featuredData.featured.map((feat, index) => (
+              <div key={index} className="bg-white p-4 rounded-lg shadow-md">
+                <a href={feat.link} target="_blank" rel="noopener noreferrer">
+                  <img src={feat.logo} alt={`${feat.name} Logo`} className="w-32 mx-auto mb-2" />
+                  <h3 className="text-center font-bold">{feat.name}</h3>
+                  <p className="text-center text-gray-600">{feat.description}</p>
+                </a>
+              </div>
+            ))}
+          </div>
             <h2 className="text-2xl font-mono font-bold mb-4">[AI Tools]</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {aiTools.map((tool, index) => (
