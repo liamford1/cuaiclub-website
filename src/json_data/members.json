@@ -1,124 +1,156 @@
 {
     "members": [
-        { 
-            "name": "Jack Brawley", 
-            "year": "2028", 
-            "major": "Undecided",
-            "email": "Brawley.jack@colorado.edu",
-            "linkedin": "",
-            "interests": "Financial advising and accounting"
+        {
+            "name": "Benji Sturcke",
+            "year": "2028",
+            "major": "Mechanical Engineering",
+            "email": "benji.sturcke@colorado.edu",
+            "linkedin": "Benji Sturcke",
+            "interests": "Sustainability solutions and tech"
         },
-        { 
-            "name": "Seth Burt", 
-            "year": "2028", 
-            "major": "Exploratory Studies",
-            "email": "seth.burt@colorado.edu",
-            "linkedin": "",
-            "interests": "Investment Banking and Actuaries"
+        {
+            "name": "Owen Sheehan",
+            "year": "2027",
+            "major": "Environmental Studies",
+            "email": "Owen.Sheehan@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/owenscottsheehan/",
+            "interests": "The future of environmental sustainability in International Business. Environmental Law."
         },
-        { 
-            "name": "Markus Dale", 
-            "year": "2027", 
-            "major": "Economics and Political Science",
-            "email": "Markus.DaleJr@colorado.edu",
-            "linkedin": "",
-            "interests": ""
+        {
+            "name": "Ren Garfield",
+            "year": "2028",
+            "major": "Business",
+            "email": "Ren.garfield@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/ren-garfield-847a02238/",
+            "interests": "Hotel development, Consulting."
         },
-        { 
-            "name": "Lachlan Hawes", 
-            "year": "2027", 
-            "major": "Business Administration",
-            "email": "lachlan.hawes@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/lachlan-hawes-41315a295",
-            "interests": "Marketing and Strategic Consulting"
+        {
+            "name": "Brayden Adams",
+            "year": "2028",
+            "major": "Finance/Real Estate",
+            "email": "brayden.adams@colorado.edu",
+            "linkedin": "www.linkedin.com/in/brayden-adams-11co",
+            "interests": "Real Estate Investment, Sports Agencies"
         },
-        { 
-            "name": "Bryce Kallio", 
-            "year": "2028", 
+        {
+            "name": "Oliver Hutton",
+            "year": "2027",
+            "major": "Economics",
+            "email": "oliver.hutton@colorado.edu",
+            "linkedin": "www.linkedin.com/in/oliver-hutton",
+            "interests": "Cybersecurity and Space Exploration."
+        },
+        {
+            "name": "Claire Helton",
+            "year": "2028",
+            "major": "Business (undecided)",
+            "email": "Clhe3281@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/clairehelton",
+            "interests": "Accounting and financial planning"
+        },
+        {
+            "name": "Emmy Tedestedt",
+            "year": "2028",
             "major": "Finance",
-            "email": "Bryce.Kallio@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/bryce-kallio",
-            "interests": "Private Equity and Consulting"
+            "email": "Emte9056@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/emmy-tedestedt-200a7b32b",
+            "interests": "Private equity and investment banking"
         },
-        { 
-            "name": "Griffin Keown", 
-            "year": "2027", 
-            "major": "Finance",
-            "email": "griffin.keown@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/griffin-keown/",
-            "interests": "Investment Banking and Private Equity"
+        {
+            "name": "Andrew Schneider",
+            "year": "2027",
+            "major": "Marketing and Information Management",
+            "email": "ansc6621@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/andrew-schneider-hm/",
+            "interests": "Marketing & Technology Sales | AI development"
         },
-        { 
-            "name": "Jack Kearns", 
-            "year": "2028", 
-            "major": "Exploratory",
-            "email": "Jack.KearnsIV@colorado.edu",
-            "linkedin": "",
-            "interests": "Gaming/Virtual Reality and Autonomous Vehicles/Robotics"
+        {
+            "name": "Asher Sikle",
+            "year": "2027",
+            "major": "Accounting and Finance",
+            "email": "asher.sikle@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/asher-sikle",
+            "interests": "Entrepreneurship"
         },
-        { 
-            "name": "Liam Masters", 
-            "year": "2027", 
-            "major": "Finance & Accounting",
-            "email": "liam.masters@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/liam-masters1/",
-            "interests": "AI Software Development and Personal Financial Planning"
+        {
+            "name": "Liam Zirkle",
+            "year": "2026",
+            "major": "Finance & Real Estate",
+            "email": "liam.zirkle@colorado.edu",
+            "linkedin": "www.linkedin.com/in/liam-zirkle",
+            "interests": "Private equity, venture capital, AI sales"
         },
-        { 
-            "name": "Catly Nguyen", 
-            "year": "2027", 
+        {
+            "name": "Andrew Kiflom",
+            "year": "2027",
+            "major": "Finance and Information Management",
+            "email": "andrew.kiflom@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/andrew-kiflom/",
+            "interests": "Financial Consulting and Financial Analysis"
+        },
+        {
+            "name": "Jordynn Coats",
+            "year": "2028",
             "major": "Marketing",
-            "email": "catly.nguyen@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/catly-nguyen",
-            "interests": "Digital Marketing and Social Media"
+            "email": "jordynn.coats@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/jordynn-coats",
+            "interests": "Social Media & Digital Marketing"
         },
-        { 
-            "name": "Ross O’Brien", 
-            "year": "2028", 
-            "major": "Undecided",
-            "email": "Roob5513@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/ross-o%E2%80%99brien",
-            "interests": "AI Development"
+        {
+            "name": "Pietro Maran",
+            "year": "2025",
+            "major": "Business Analytics",
+            "email": "Pietro.Maran@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/pietro-maran-7930791b9/",
+            "interests": "Business Intelligence, AI consulting"
         },
-        { 
-            "name": "Patrick O’Rourke", 
-            "year": "2027", 
-            "major": "Marketing",
-            "email": "Paor7365@colorado.edu",
-            "linkedin": "",
-            "interests": "AI consulting and Sports Business"
+        {
+            "name": "Joseph Davis",
+            "year": "2027",
+            "major": "Operations Management",
+            "email": "joseph.davis-2@colorado.edu",
+            "linkedin": "www.linkedin.com/in/joseph-ben-davis",
+            "interests": "Consulting, AI/Tech"
         },
-        { 
-            "name": "Nelson Speer", 
-            "year": "2027", 
-            "major": "Finance and Accounting",
-            "email": "nelson.speer@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/nelson-speer/",
-            "interests": "Wealth Management and Consulting"
+        {
+            "name": "Zoe Bobbin",
+            "year": "2027",
+            "major": "Business Analytics",
+            "email": "zobo6397@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/zoe-bobbin",
+            "interests": "Digital Marketing & AI driven advertisement and Hospitality & Travel Analytics"
         },
-        { 
-            "name": "Owen Smail", 
-            "year": "2027", 
-            "major": "Accounting",
-            "email": "Owen.smail@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/owen-smail-152102",
-            "interests": "Audit/Tax Software and AI"
-        },
-        { 
-            "name": "Hugh Werber", 
-            "year": "2027", 
+        {
+            "name": "Keaton Helber",
+            "year": "2027",
             "major": "Finance",
-            "email": "hugh.werber@colorado.edu",
-            "linkedin": "https://www.linkedin.com/in/hugh-werber-cu",
-            "interests": "Equity Research and Investment Banking"
+            "email": "keaton.helber@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/keatonhelber/",
+            "interests": "Wealth Management and Financial Planning"
         },
-        { 
-            "name": "Chad Jones", 
-            "year": "2028", 
-            "major": "Exploratory",
-            "email": "Chad.jones@colorado.edu",
-            "linkedin": "",
-            "interests": "AI and Finance"
+        {
+            "name": "Darby McMullen",
+            "year": "Fall 2025",
+            "major": "Finance",
+            "email": "darby.mcmullen@colorado.edu",
+            "linkedin": "www.linkedin.com/in/darbymcmullen",
+            "interests": "Wealth Management and AI Software"
+        },
+        {
+            "name": "Ella Keen",
+            "year": "2027",
+            "major": "Marketing",
+            "email": "Elke4749@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/ella-keen",
+            "interests": "Entrepreneurship and finance"
+        },
+        {
+            "name": "Alec Scarince",
+            "year": "2027",
+            "major": "Finance",
+            "email": "alec.scarince@colorado.edu",
+            "linkedin": "https://www.linkedin.com/in/alec-scarince",
+            "interests": "Wealth management, financial analyst"
         }
     ]
 }
