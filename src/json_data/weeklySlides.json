@@ -1,6 +1,17 @@
 {
     "weeklySlides": [
       {
+        "week": "Week 5",
+        "date": "Mar 4",
+        "link": "../../slides/slides5.pdf",
+        "takeaways": [
+          "Microsoft and Amazon Quantum Chips",
+          "ChatGPT 4.5",
+          "AI Proofing your Resume Profesional Building",
+          "Guest Speaker: StudyFetch"
+        ]
+      },
+      {
         "week": "Week 3",
         "date": "Feb 18",
         "link": "../../slides/slides3.pdf",

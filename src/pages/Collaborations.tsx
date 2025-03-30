@@ -9,6 +9,12 @@ interface Collaboration {
 
 const collaborations: Collaboration[] = [
   {
+    name: "StudyFetch",
+    logo: "../../ai-tool-logos/studyfetch-logo.webp", // Replace with actual image path
+    description: "Study Fetch is an educational technology platform dedicated to transforming the traditional education experience with artificial intelligence.",
+    website: "https://www.studyfetch.com/",
+  },
+  {
     name: "Pickaxe",
     logo: "../../ai-tool-logos/pickaxe-logo.webp", // Replace with actual image path
     description: "Pickaxe is a platform that enables users to create AI-powered tools without coding. It simplifies the process of building custom AI applications.",
