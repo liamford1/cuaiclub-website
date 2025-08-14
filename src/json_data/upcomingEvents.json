@@ -1,28 +1,92 @@
 {
-    "events": [
-      {
-        "title": "FEATURED - Elevate: AI & Careers Community Event",
-        "date": "Friday, Apr 25th",
-        "time": "1:00PM-3:45PM",
-        "location": "Olson Atrium & Room 352",
-        "news": "",
-        "prof_building": "",
-        "guest_speaker": "Susan Adams, Dan Murray, and more!",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSexhsCBguYowVj2AG2XOdvZPYv-aoWqS43NHdaw-jSjchzlFg/viewform",
-        "category": "Community Event"
-      },
-      {
-        "title": "NVIDIA Workshop",
-        "date": "Tuesday, Apr 22nd",
-        "time": "6:15 PM - 7:30 PM",
-        "location": "Koelbel 352",
-        "news": "",
-        "prof_building": "",
-        "guest_speaker": "",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog",
-        "category": "Workshop"
-      }
-    ]
-  }
-  
-  
+  "events": [
+    {
+      "title": "Executive Board Q&A Session",
+      "date": "Monday, Sep 9th",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "AI Club Executive Board",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "BoodleBox Presentation",
+      "date": "Monday, Sep 23rd",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "France Hoang",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "Professional Development Workshop",
+      "date": "Monday, Sep 30th",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "Interview practice, networking skills, and professional development",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Workshop"
+    },
+    {
+      "title": "Meeting",
+      "date": "Monday, Oct 7th",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "Meeting",
+      "date": "Monday, Oct 21st",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "Meeting",
+      "date": "Monday, Nov 4th",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "Meeting",
+      "date": "Monday, Nov 18th",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    },
+    {
+      "title": "Meeting",
+      "date": "Monday, Dec 2nd",
+      "time": "TBD",
+      "location": "TBD",
+      "news": "",
+      "prof_building": "",
+      "guest_speaker": "",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
+      "category": "Meeting"
+    }
+  ]
+}
