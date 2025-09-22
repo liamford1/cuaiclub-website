@@ -1,21 +1,10 @@
 {
   "events": [
     {
-      "title": "First Meeting!",
-      "date": "Monday, Sep 9th",
-      "time": "TBD",
-      "location": "TBD",
-      "news": "",
-      "prof_building": "",
-      "guest_speaker": "AI Club Executive Board",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform",
-      "category": "Meeting"
-    },
-    {
-      "title": "BoodleBox Presentation",
+      "title": "2nd Meeting - BoodleBox",
       "date": "Monday, Sep 23rd",
-      "time": "TBD",
-      "location": "TBD",
+      "time": "6:30pm",
+      "location": "Hale 230",
       "news": "",
       "prof_building": "",
       "guest_speaker": "France Hoang",
