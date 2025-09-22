@@ -94,7 +94,7 @@ function AboutPage() {
       </div>
       <div className="text-center -mt-16">
         <p className="text-lg font-semibold text-gray-700">
-          * Prospective Members must attend at least 3 meetings to become a member *
+          * Prospective Members must attend at least 5 meetings to become a member *
         </p>
       </div>
 
