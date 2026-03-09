@@ -110,21 +110,21 @@ function TeamPage() {
             <a href="https://www.linkedin.com/company/cuaiclub/" 
                target="_blank" 
                rel="noopener noreferrer"
-               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full min-w-[400px]">
+               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full">
               <Linkedin className="h-8 w-8 text-blue-600 mb-3" />
               <span className="text-gray-800 font-semibold">LinkedIn</span>
             </a>
-            <a href="https://www.instagram.com/aiclubcu/" 
-               target="_blank" 
+            <a href="https://www.instagram.com/aiclubcu/"
+               target="_blank"
                rel="noopener noreferrer"
-               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full min-w-[400px]">
+               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full">
               <Instagram className="h-8 w-8 text-blue-600 mb-3" />
               <span className="text-gray-800 font-semibold">Instagram</span>
             </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog" 
-               target="_blank" 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog"
+               target="_blank"
                rel="noopener noreferrer"
-               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full min-w-[400px]">
+               className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition w-full">
               <FileText className="h-8 w-8 text-blue-600 mb-3" />
               <span className="text-gray-800 font-semibold">Interest Form</span>
             </a>

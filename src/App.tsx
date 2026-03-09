@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -11,13 +11,29 @@ import { Menu, X } from 'lucide-react';
 function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const lastScrollY = useRef<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const whiteTextPaths: string[] = ['/', '/schedule'];
   const textColor: string = whiteTextPaths.includes(location.pathname) ? "text-white" : "text-black";
   const iconColor: string = whiteTextPaths.includes(location.pathname) ? "text-white" : "text-black";
 
   return (
-    <nav className="fixed w-full z-50 bg-gradient-to-b from-black/50 to-transparent">
+    <nav className={`fixed w-full z-50 bg-gradient-to-b from-black/70 to-transparent transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center transition md:-ml-28 -ml-4">
@@ -74,7 +90,7 @@ function Navbar() {
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
