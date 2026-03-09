@@ -65,9 +65,6 @@ function Navbar() {
             <Link to="/collaborations" className={`flex items-center text-lg transition ${textColor} hover:text-blue-200`}>
               <span>Collaborations</span>
             </Link>
-            <Link to="/members" className={`flex items-center text-lg transition ${textColor} hover:text-blue-200`}>
-              <span>Members Page</span>
-            </Link>
           </div>
         </div>
 

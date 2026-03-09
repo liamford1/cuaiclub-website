@@ -23,7 +23,7 @@ function TeamPage() {
             className="rounded-lg shadow-xl w-full md:w-[90%] lg:w-[95%] h-auto"
           />
           {/* About Us Paragraph */}
-          <div className="mt-8 text-center">
+          <div className="mt-16 mb-8 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Our Executive Board at the CU AI Club is dedicated to building a community of learners and innovators passionate about artificial intelligence. 
