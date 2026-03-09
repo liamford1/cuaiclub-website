@@ -34,9 +34,9 @@ function Navbar() {
 
   return (
     <nav className={`fixed w-full z-50 bg-gradient-to-b from-black/70 to-transparent transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="w-full px-6">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center transition md:-ml-28 -ml-4">
+          <Link to="/" className="flex items-center transition">
             <img src="cuaic-logo.png" alt="CU AI Club Logo" className="h-12 md:h-16" />
           </Link>
 
@@ -49,7 +49,7 @@ function Navbar() {
           </button>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex space-x-8 -mr-28">
+          <div className="hidden md:flex space-x-6">
             <Link to="/" className={`flex items-center text-lg transition ${textColor} hover:text-blue-200`}>
               <span>Home</span>
             </Link>
