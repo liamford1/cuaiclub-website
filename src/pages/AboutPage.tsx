@@ -25,30 +25,16 @@ function AboutPage() {
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div>
+                  <h3 className="text-xl font-semibold">General Meetings</h3>
+                  <p className="text-gray-600">Our bi-weekly general meetings feature a range of speakers, activities, and outside events. Guest speaker events feature industry leaders and AI experts sharing insights and experiences with Q&A and network opportunities! We also often collaborate with other clubs and organizations around CU and Boulder. Past  events include crypto talks with the Blockchain club, a tech talk with Red Bull athletes, and an entrepreneurship talk with a co-founder of BeReal. General meetings are open to all!</p>
+                  <div className="mt-8">
+                  </div>
+                </div>
+                <div>
                   <h3 className="text-xl font-semibold">Professional Building Workshops</h3>
-                  <p className="text-gray-600">We offer bi-weekly workshops led by our team and industry professionals to enhance your AI skills. These sessions cover topics like prompt engineering, AI integration in businesses, and workplace AI applications. Designed to provide practical insights and real-world experience, our workshops help members build confidence, refine expertise, and connect with a community of AI enthusiasts.</p>
+                  <p className="text-gray-600">The bi-weekly workshop meetings are an opportunity for Analysts and Consultants to work on AI consulting projects, and gain technical and business skills in AI. Through guest speakers and our team, members can expect to learn principles of software and AI development through real projects in AI that are for companies around Boulder as well as for the club.</p>
                   <div className="mt-8">
-                    <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfQmxYOv_Rd-oQ6cpvXiod9RAOOoveV6chn_oKluHYmXJSRkQ/viewform?usp=dialog" className="inline-block px-6 py-3 w-40 bg-white text-black border-2 border-black rounded-lg hover:bg-gray-100 transition flex items-center justify-center">
-                      Sign Up
-                    </Link>
                   </div>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div>
-                  <h3 className="text-xl font-semibold">Guest Speaker Events</h3>
-                  <p className="text-gray-600">Our guest speaker events feature industry leaders and AI experts sharing insights and experiences. These sessions provide opportunities to learn about new technologies, gain professional advice, and engage through Q&A. They inspire members and deepen their understanding of the skills needed to excel in the AI industry.</p>
-                  <div className="mt-8">
-                    <Link to="/schedule" className="inline-block px-6 py-3 bg-white text-black border-2 border-black rounded-lg hover:bg-gray-100 transition">
-                      Upcoming Events
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div>
-                  <h3 className="text-xl font-semibold">Externship</h3>
-                  <p className="text-gray-600">The CU AI Club Externship offers members the chance to collaborate with industry partners on real-world AI challenges. Participants gain hands-on experience in data analysis, AI-driven strategies, and problem-solving while enhancing teamwork, project management, and communication skills. This program bridges the gap between students and businesses, fostering innovation and providing a platform to showcase talents and build industry connections.</p>
                 </div>
               </div>
             </div>
@@ -79,14 +65,24 @@ function AboutPage() {
                 <li>✓ Eligibility to list CU AI Club on your resume/LinkedIn</li>
               </ul>
             </div>
+            <br></br>
             <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4">Executive Member</h3>
+              <h3 className="text-xl font-semibold mb-4">Analyst</h3>
               <ul className="text-gray-600 text-center space-y-2">
-                <li>✓ Lead workshops and guide AI learning</li>
-                <li>✓ Plan and organize major events</li>
-                <li>✓ Collaborate with industry professionals</li>
-                <li>✓ Manage club operations and finances</li>
-                <li>✓ Showcase leadership on resume/LinkedIn</li>
+                <li>✓ Professional building for AI including resume and LinkedIn</li>
+                <li>✓ Personal passion project for the AI club</li>
+                <li>✓ Learn from current executive board members</li>
+                <li>✓ Industry AI project experience</li>
+                <li>✓ Access to Workshop meetings</li>
+                <li>✓ Consideration for executive board positions</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
+              <h3 className="text-xl font-semibold mb-4">Consultant</h3>
+              <ul className="text-gray-600 text-center space-y-2">
+                <li>✓ Industry AI project experience</li>
+                <li>✓ Access to Workshop meetings</li>
+                <li>✓ Networking with professionals around Boulder in various industries</li>
               </ul>
             </div>
           </div>
