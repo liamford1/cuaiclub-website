@@ -40,14 +40,14 @@ function TeamPage() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
             {execs.map((exec, index) => (
-              <a 
-                key={index} 
+              <a
+                key={index}
                 href={exec.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block cursor-pointer"
+                className="block cursor-pointer h-full"
               >
-                <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300">
+                <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300 h-full">
                   <div className="flex flex-col items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                       <img 
