@@ -55,14 +55,14 @@ function SchedulePage() {
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0 md:ml-6">
-                  <a 
+                  {/* <a 
                     href={event.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="px-6 py-2 bg-white text-black border-2 border-black rounded-lg hover:bg-gray-100 transition inline-block text-center"
                   >
                     RSVP
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

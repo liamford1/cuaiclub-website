@@ -1,10 +1,13 @@
 import React from 'react';
 import { Linkedin, Instagram, FileText } from 'lucide-react';
 import membersData from "../json_data/exec.json";
+import sponsersData from "../json_data/sponsers.json";
+
 
 
 function TeamPage() {
   const { execs } = membersData;
+  const { sponsers } = sponsersData;
   return (
     <div className="min-h-screen bg-gray-50 pt-16 flex flex-col items-center">
       <h1 className="absolute font-mono top-20 md:top-18 left-8 md:left-16 lg:left-20 text-5xl font-bold text-gray-900">
@@ -58,6 +61,38 @@ function TeamPage() {
                     <p className="text-gray-500 text-center">{exec.major}</p> 
                     <p className="text-gray-400 text-center">{exec.home}</p>
                     <p className="text-gray-400 text-center">{exec.email}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+                <div className="w-full md:w-1/2 flex flex-col items-center">
+          <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Club Sponser]</h1>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
+            {sponsers.map((exec, index) => (
+              <a 
+                key={index} 
+                href={exec.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer"
+              >
+                <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300">
+                  <div className="flex flex-col items-center">
+                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                      <img 
+                        src={sponsers.image} 
+                        alt={sponsers.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold text-black mb-1">{sponsers.name}</h3>
+                    <p className="text-black text-center font-semibold mb-2">{sponsers.role}</p>
+                    <p className="text-gray-500 text-center">{sponsers.major}</p> 
+                    <p className="text-gray-400 text-center">{sponsers.home}</p>
+                    <p className="text-gray-400 text-center">{sponsers.email}</p>
                   </div>
                 </div>
               </a>
