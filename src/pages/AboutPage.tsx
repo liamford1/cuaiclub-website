@@ -23,19 +23,14 @@ function AboutPage() {
           <div className="space-y-8">
             <h2 className="text-5xl font-mono font-bold text-gray-900">[What We Do]</h2>
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+              <div className="flex flex-col space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold">General Meetings</h3>
                   <p className="text-gray-600">Our bi-weekly general meetings feature a range of speakers, activities, and outside events. Guest speaker events feature industry leaders and AI experts sharing insights and experiences with Q&A and network opportunities! We also often collaborate with other clubs and organizations around CU and Boulder. Past  events include crypto talks with the Blockchain club, a tech talk with Red Bull athletes, and an entrepreneurship talk with a co-founder of BeReal. General meetings are open to all!</p>
-                  <div className="mt-8">
-                  </div>
                 </div>
-                <br></br>
                 <div>
                   <h3 className="text-xl font-semibold">Professional Building Workshops</h3>
                   <p className="text-gray-600">The bi-weekly workshop meetings are an opportunity for Analysts and Consultants to work on AI consulting projects, and gain technical and business skills in AI. Through guest speakers and our team, members can expect to learn principles of software and AI development through real projects in AI that are for companies around Boulder as well as for the club.</p>
-                  <div className="mt-8">
-                  </div>
                 </div>
               </div>
             </div>
@@ -45,7 +40,7 @@ function AboutPage() {
         {/* Membership Section */}
         <div className="bg-gray-50 py-12">
           <h2 className="text-4xl font-mono font-bold text-gray-900 text-center mb-8">[Membership]</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Prospective Member</h3>
               <ul className="text-gray-600 text-center space-y-2">
@@ -66,7 +61,6 @@ function AboutPage() {
                 <li>✓ Eligibility to list CU AI Club on your resume/LinkedIn</li>
               </ul>
             </div>
-            <br></br>
             <div className="flex flex-col items-center bg-gray-100 p-6 border-2 border-gray-200 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Analyst</h3>
               <ul className="text-gray-600 text-center space-y-2">
