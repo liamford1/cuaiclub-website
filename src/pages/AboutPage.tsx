@@ -1,6 +1,5 @@
 import React from 'react';
-import { Linkedin, Instagram, FileText } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import ConnectTemplate from './ConnectTemplate';
 
 function AboutPage() {
   return (
@@ -90,6 +89,7 @@ function AboutPage() {
       </div>
 
 
+      <ConnectTemplate />
     </div>
   );
 }
