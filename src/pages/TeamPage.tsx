@@ -57,6 +57,7 @@ function TeamPage() {
                     <p className="text-black text-center font-semibold mb-2">{exec.role}</p>
                     <p className="text-gray-500 text-center">{exec.major}</p> 
                     <p className="text-gray-400 text-center">{exec.home}</p>
+                    <p className="text-gray-400 text-center">{exec.email}</p>
                   </div>
                 </div>
               </a>
