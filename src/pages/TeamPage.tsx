@@ -72,7 +72,7 @@ function TeamPage() {
       {/* Sponsors Section */}
       <div className="w-full flex flex-col items-center px-8 mt-16">
         <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Club Sponser]</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
           {sponsers.map((exec, index) => (
             <a
               key={index}
