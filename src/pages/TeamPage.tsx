@@ -1,66 +1,81 @@
 import React from 'react';
-import membersData from "../json_data/exec.json";
+import membersData from '../json_data/exec.json';
 import ConnectTemplate from './ConnectTemplate';
-import sponsersData from "../json_data/sponsers.json";
-
-
+import sponsersData from '../json_data/sponsers.json';
+import { useScrollReveal } from '../utils/useScrollReveal';
+import { ExternalLink } from 'lucide-react';
 
 function TeamPage() {
   const { execs } = membersData;
   const { sponsers } = sponsersData;
+
+  const headerRef = useScrollReveal();
+  const execRef   = useScrollReveal();
+  const sponsorRef = useScrollReveal();
+
   return (
-    <div className="min-h-screen bg-gray-50 pt-16 flex flex-col items-center">
-      <h1 className="absolute font-mono top-20 md:top-18 left-8 md:left-16 lg:left-20 text-5xl font-bold text-gray-900">
-       [Meet Our Team!]
-      </h1>
-      
-      <div className="w-full flex flex-col md:flex-row items-center justify-center px-8">
-        {/* Left Side - Group Picture */}
-        <div className="w-full md:w-2/3 lg:w-3/5 flex flex-col justify-center items-center mt-24">
-          <img 
-            src="/headshots/execpic.webp"
-            alt="Group Team Photo"
-            className="rounded-lg shadow-xl w-full md:w-[90%] lg:w-[95%] h-auto"
-          />
-          {/* About Us Paragraph */}
-          <div className="mt-16 mb-8 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our Executive Board at the CU AI Club is dedicated to building a community of learners and innovators passionate about artificial intelligence. 
-              Our mission is to empower students with the skills and tools needed to excel in AI, connect with industry leaders, 
-              and collaborate on meaningful projects that drive innovation. Whether you're just starting out or already experienced, 
-              you'll find opportunities to grow, learn, and make an impact in the ever-evolving field of AI. Feel free to each out to any of our team members!
+    <div className="min-h-screen bg-white">
+      {/* ── Header / Group Photo ──────────────────────────────── */}
+      <div ref={headerRef} className="relative pt-28 pb-16 px-6 bg-slate-900 overflow-hidden">
+        {/* Ambient orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[80px] orb-1 pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-indigo-600/10 rounded-full blur-[60px] orb-2 pointer-events-none" />
+
+        <div className="relative max-w-6xl mx-auto">
+          <div className="reveal text-center mb-10">
+            <span className="inline-block font-mono text-xs font-semibold tracking-[0.25em] uppercase text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full mb-4">
+              Executive Board
+            </span>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Meet Our Team</h1>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+              Our Executive Board is dedicated to building a community of learners and innovators passionate about artificial intelligence.
             </p>
           </div>
-        </div>
 
-        {/* Right Side - Sponsers */}
-        <div className="w-full md:w-1/2 flex flex-col items-center">
-          <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Executive Board]</h1>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[600px] overflow-y-auto">
+          <div className="reveal reveal-delay-2 relative group max-w-3xl mx-auto">
+            <div className="absolute -inset-3 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+            <img
+              src="/headshots/execpic.webp"
+              alt="Group Team Photo"
+              className="relative w-full rounded-2xl shadow-2xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ── Exec Cards ───────────────────────────────────────── */}
+      <div ref={execRef} className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="reveal text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Executive Board Members</h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
             {execs.map((exec, index) => (
               <a
                 key={index}
                 href={exec.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block cursor-pointer h-full"
+                className={`reveal reveal-delay-${(index % 4) + 1} group block`}
               >
-                <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300 h-full">
-                  <div className="flex flex-col items-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                      <img 
-                        src={exec.image} 
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                  <div className="relative">
+                    <div className="w-full aspect-square overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                      <img
+                        src={exec.image}
                         alt={exec.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-black mb-1">{exec.name}</h3>
-                    <p className="text-black text-center font-semibold mb-2">{exec.role}</p>
-                    <p className="text-gray-500 text-center">{exec.major}</p> 
-                    <p className="text-gray-400 text-center">{exec.home}</p>
-                    <p className="text-gray-400 text-center">{exec.email}</p>
+                    <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <ExternalLink className="w-3.5 h-3.5 text-indigo-600" />
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-bold text-gray-900 text-sm leading-tight mb-1">{exec.name}</h3>
+                    <p className="text-indigo-600 text-xs font-medium mb-1">{exec.role}</p>
+                    <p className="text-gray-400 text-xs">{exec.major}</p>
                   </div>
                 </div>
               </a>
@@ -69,38 +84,46 @@ function TeamPage() {
         </div>
       </div>
 
-      {/* Sponsors Section */}
-      <div className="w-full flex flex-col items-center px-8 mt-16">
-        <h1 className="text-4xl font-mono font-bold text-black mb-6">[Our Club Sponser]</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
-          {sponsers.map((exec, index) => (
-            <a
-              key={index}
-              href={exec.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block cursor-pointer"
-            >
-              <div className="bg-gray-100 rounded-lg shadow-xl p-6 border-2 border-gray-200 transform hover:scale-105 transition-transform duration-300">
-                <div className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <img
-                      src={exec.image}
-                      alt={exec.name}
-                      className="w-full h-full object-cover"
-                    />
+      {/* ── Sponsor ──────────────────────────────────────────── */}
+      {sponsers.length > 0 && (
+        <div ref={sponsorRef} className="bg-slate-50 py-20 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="reveal text-center mb-12">
+              <span className="inline-block font-mono text-xs font-semibold tracking-[0.25em] uppercase text-indigo-500 bg-indigo-50 px-3 py-1 rounded-full mb-4">
+                Faculty
+              </span>
+              <h2 className="text-3xl font-bold text-gray-900">Our Club Sponsor</h2>
+            </div>
+
+            <div className="flex justify-center gap-6 flex-wrap">
+              {sponsers.map((sponsor, index) => (
+                <a
+                  key={index}
+                  href={sponsor.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="reveal group block w-56"
+                >
+                  <div className="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden">
+                    <div className="w-full aspect-square overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                      <img
+                        src={sponsor.image}
+                        alt={sponsor.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-4 text-center">
+                      <h3 className="font-bold text-gray-900 text-sm mb-1">{sponsor.name}</h3>
+                      <p className="text-indigo-600 text-xs font-medium mb-1">{sponsor.role}</p>
+                      <p className="text-gray-400 text-xs">{sponsor.email}</p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-black mb-1">{exec.name}</h3>
-                  <p className="text-black text-center font-semibold mb-2">{exec.role}</p>
-                  <p className="text-gray-500 text-center">{exec.major}</p>
-                  <p className="text-gray-400 text-center">{exec.home}</p>
-                  <p className="text-gray-400 text-center">{exec.email}</p>
-                </div>
-              </div>
-            </a>
-          ))}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      )}
 
       <ConnectTemplate />
     </div>
